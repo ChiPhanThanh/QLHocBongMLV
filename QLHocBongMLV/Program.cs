@@ -24,6 +24,7 @@ namespace QLHocBongMLV
             //Application.Run(new QLHocSinh());
 
             //Chao phan thanh chi
+            //chào ngài Sir AlexFugusion
         }
     }
 }

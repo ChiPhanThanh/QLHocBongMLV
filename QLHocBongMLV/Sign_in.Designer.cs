@@ -31,8 +31,8 @@ namespace QLHocBongMLV
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sign_in));
             this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnDangKi = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,6 +42,10 @@ namespace QLHocBongMLV
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtNhapUser = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtPasswordAgain = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -58,31 +62,32 @@ namespace QLHocBongMLV
             this.label4.TabIndex = 23;
             this.label4.Text = "label4";
             // 
-            // button2
+            // btnThoat
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(27)))), ((int)(((byte)(68)))));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button2.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(751, 424);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 53);
-            this.button2.TabIndex = 22;
-            this.button2.Text = "Thoát";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(27)))), ((int)(((byte)(68)))));
+            this.btnThoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnThoat.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnThoat.Location = new System.Drawing.Point(751, 424);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(150, 53);
+            this.btnThoat.TabIndex = 22;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // button1
+            // btnDangKi
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(77)))), ((int)(((byte)(102)))));
-            this.button1.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(499, 424);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 53);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "Đăng kí";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnDangKi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(77)))), ((int)(((byte)(102)))));
+            this.btnDangKi.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangKi.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnDangKi.Location = new System.Drawing.Point(499, 424);
+            this.btnDangKi.Name = "btnDangKi";
+            this.btnDangKi.Size = new System.Drawing.Size(150, 53);
+            this.btnDangKi.TabIndex = 21;
+            this.btnDangKi.Text = "Đăng kí";
+            this.btnDangKi.UseVisualStyleBackColor = false;
+            this.btnDangKi.Click += new System.EventHandler(this.btnDangKi_Click);
             // 
             // label3
             // 
@@ -170,18 +175,69 @@ namespace QLHocBongMLV
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // txtNhapUser
+            // 
+            this.txtNhapUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNhapUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNhapUser.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtNhapUser.Location = new System.Drawing.Point(548, 121);
+            this.txtNhapUser.Multiline = true;
+            this.txtNhapUser.Name = "txtNhapUser";
+            this.txtNhapUser.Size = new System.Drawing.Size(296, 25);
+            this.txtNhapUser.TabIndex = 27;
+            this.txtNhapUser.Tag = "";
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtPassword.Location = new System.Drawing.Point(548, 189);
+            this.txtPassword.Multiline = true;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(296, 25);
+            this.txtPassword.TabIndex = 28;
+            // 
+            // txtPasswordAgain
+            // 
+            this.txtPasswordAgain.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPasswordAgain.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPasswordAgain.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtPasswordAgain.Location = new System.Drawing.Point(548, 256);
+            this.txtPasswordAgain.Multiline = true;
+            this.txtPasswordAgain.Name = "txtPasswordAgain";
+            this.txtPasswordAgain.PasswordChar = '*';
+            this.txtPasswordAgain.Size = new System.Drawing.Size(296, 25);
+            this.txtPasswordAgain.TabIndex = 29;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtEmail.Location = new System.Drawing.Point(548, 328);
+            this.txtEmail.Multiline = true;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(296, 25);
+            this.txtEmail.TabIndex = 30;
+            // 
             // Sign_in
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(976, 523);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtPasswordAgain);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtNhapUser);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnThoat);
+            this.Controls.Add(this.btnDangKi);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox2);
@@ -209,8 +265,8 @@ namespace QLHocBongMLV
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Button btnDangKi;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -218,5 +274,9 @@ namespace QLHocBongMLV
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtNhapUser;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtPasswordAgain;
+        private System.Windows.Forms.TextBox txtEmail;
     }
 }

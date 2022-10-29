@@ -225,7 +225,7 @@
             this.Controls.Add(this.labelTrangThaiTK);
             this.Controls.Add(this.txtTenTaiKhoan);
             this.Name = "QLTaiKhoan";
-            this.Text = "QLTaiKhoan";
+            this.Text = "Quản Lý Tài Khoản";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTK)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

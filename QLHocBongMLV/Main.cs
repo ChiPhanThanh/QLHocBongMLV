@@ -43,9 +43,7 @@ namespace QLHocBongMLV
 
         private void btnQLSV_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new QLSinhVien());
-
-
+            OpenChildForm(new QlSinhVien());
         }
 
         private void btnHS_Click(object sender, EventArgs e)
@@ -75,12 +73,12 @@ namespace QLHocBongMLV
 
         private void btnCum_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Đang cập nhật", "Thông bao", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            OpenChildForm(new QLCum());
         }
 
         private void btnCV_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Đang cập nhật", "Thông bao", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            OpenChildForm(new QLChuVu());
         }
 
         private void btnDiem_Click(object sender, EventArgs e)

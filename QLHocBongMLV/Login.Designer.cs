@@ -1,4 +1,4 @@
-﻿
+
 namespace QLHocBongMLV
 {
     partial class Login
@@ -87,6 +87,10 @@ namespace QLHocBongMLV
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(281, 24);
+            this.txtPassword.Location = new System.Drawing.Point(502, 233);
+            this.txtPassword.Multiline = true;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.TabIndex = 14;
             // 
             // txtTenTaikhoan
@@ -159,11 +163,13 @@ namespace QLHocBongMLV
             this.bbtnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(27)))), ((int)(((byte)(68)))));
             this.bbtnThoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.bbtnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bbtnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bbtnThoat.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bbtnThoat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bbtnThoat.Location = new System.Drawing.Point(702, 290);
             this.bbtnThoat.Name = "bbtnThoat";
             this.bbtnThoat.Size = new System.Drawing.Size(138, 53);
+            this.bbtnThoat.Size = new System.Drawing.Size(150, 53);
             this.bbtnThoat.TabIndex = 7;
             this.bbtnThoat.Text = "Thoát";
             this.bbtnThoat.UseVisualStyleBackColor = false;
@@ -174,6 +180,7 @@ namespace QLHocBongMLV
             this.btnDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(77)))), ((int)(((byte)(102)))));
             this.btnDangNhap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDangNhap.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangNhap.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnDangNhap.Location = new System.Drawing.Point(450, 290);
@@ -256,7 +263,7 @@ namespace QLHocBongMLV
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 19;
             this.pictureBox4.TabStop = false;
-            // 
+            //
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);

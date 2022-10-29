@@ -1,4 +1,4 @@
-﻿
+
 namespace QLHocBongMLV
 {
     partial class panelMain
@@ -48,6 +48,7 @@ namespace QLHocBongMLV
             this.panelTitle = new System.Windows.Forms.Panel();
             this.panelDestop = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1Menu.SuspendLayout();
             this.panelLogo.SuspendLayout();
@@ -351,6 +352,7 @@ namespace QLHocBongMLV
             this.label1.Font = new System.Drawing.Font("Arial", 19.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
             this.label1.Location = new System.Drawing.Point(401, 19);
+            this.label1.Location = new System.Drawing.Point(502, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(594, 37);
             this.label1.TabIndex = 1;
@@ -365,6 +367,7 @@ namespace QLHocBongMLV
             this.panelTitle.Location = new System.Drawing.Point(307, 0);
             this.panelTitle.Name = "panelTitle";
             this.panelTitle.Size = new System.Drawing.Size(1415, 71);
+            this.panelTitle.Size = new System.Drawing.Size(1617, 71);
             this.panelTitle.TabIndex = 2;
             this.panelTitle.UseWaitCursor = true;
             // 
@@ -393,17 +396,34 @@ namespace QLHocBongMLV
             this.label2.Text = "MLV 2011";
             this.label2.UseWaitCursor = true;
             // 
+            this.panelDestop.Size = new System.Drawing.Size(1615, 774);
+            this.panelDestop.TabIndex = 3;
+            this.panelDestop.UseWaitCursor = true;
+            // 
+
             // pictureBox2
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::QLHocBongMLV.Properties.Resources.LOGO_HB;
             this.pictureBox2.Location = new System.Drawing.Point(421, 149);
+            this.pictureBox2.Location = new System.Drawing.Point(522, 149);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(520, 477);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.UseWaitCursor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label2.Location = new System.Drawing.Point(650, 663);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(246, 58);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "MLV 2011";
             // 
             // panelMain
             // 

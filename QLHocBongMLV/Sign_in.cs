@@ -83,14 +83,12 @@ namespace QLHocBongMLV
                 modify.Command(query);
                 if (MessageBox.Show("Đăng kí thành công", " Thông báo..", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                 {
-                    
                     this.Close();
                 }
             }
             catch
             {
                 MessageBox.Show("Tên tài khoản này đã được đăng kí!\n Vui lòng đăng kí tên tài khoản khác ");
-
             }
         }
 
@@ -101,6 +99,10 @@ namespace QLHocBongMLV
             {
                     Login login = new Login();
                     login.ShowDialog();
+            DialogResult dr = MessageBox.Show(" Bạn có muốn thoát không", "Thông báo...", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (dr == DialogResult.Yes)
+            {
+                Application.Exit();
             }
             else
             {

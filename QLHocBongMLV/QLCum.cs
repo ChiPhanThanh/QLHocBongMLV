@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace QLHocBongMLV
 {
-    public partial class QlSinhVien : Form
+    public partial class QLCum : Form
     {
-        public QlSinhVien()
+        public QLCum()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

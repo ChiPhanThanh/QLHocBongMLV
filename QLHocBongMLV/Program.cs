@@ -16,14 +16,12 @@ namespace QLHocBongMLV
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Login());
+            Application.Run(new Login());
             //Application.Run(new ResetPassWord());
             //Application.Run(new Sign_in());
-           Application.Run(new panelMain());
+           //Application.Run(new panelMain());
             //Application.Run(new QLSinhVien());
             //Application.Run(new QLHocSinh());
-
-            //Chao phan thanh chi
         }
     }
 }

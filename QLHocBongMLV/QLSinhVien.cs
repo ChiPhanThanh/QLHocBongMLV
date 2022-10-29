@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QLHocBongMLV
 {
-    public partial class QlSinhVien : Form
+    public partial class QLSinhVien : Form
     {
-        public QlSinhVien()
+        public QLSinhVien()
         {
             InitializeComponent();
         }

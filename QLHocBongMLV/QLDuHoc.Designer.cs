@@ -381,7 +381,7 @@
             this.Controls.Add(this.labelHoTenDH);
             this.Controls.Add(this.txtMaDH);
             this.Name = "QLDuHoc";
-            this.Text = "Quản Lý Du Học Sinh";
+            this.Text = "QLDuHoc";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAN)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -590,7 +590,7 @@
             this.Controls.Add(this.labelMaTuTangHS);
             this.Controls.Add(this.txtMaHS);
             this.Name = "QLHocSinh";
-            this.Text = "Quản Lý Học Sinh";
+            this.Text = "QLHocSinh";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHS)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

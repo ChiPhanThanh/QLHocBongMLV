@@ -61,7 +61,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connection.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,7 +73,6 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modify.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QLAnNhan.cs">
@@ -82,18 +80,6 @@
     </Compile>
     <Compile Include="QLAnNhan.Designer.cs">
       <DependentUpon>QLAnNhan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QLChuVu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="QLChuVu.Designer.cs">
-      <DependentUpon>QLChuVu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QLCum.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="QLCum.Designer.cs">
-      <DependentUpon>QLCum.cs</DependentUpon>
     </Compile>
     <Compile Include="QLCuuSV.cs">
       <SubType>Form</SubType>
@@ -143,7 +129,6 @@
     <Compile Include="Sign_in.Designer.cs">
       <DependentUpon>Sign_in.cs</DependentUpon>
     </Compile>
-    <Compile Include="TaiKhoan.cs" />
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,15 +147,6 @@
     </Compile>
     <EmbeddedResource Include="QLAnNhan.resx">
       <DependentUpon>QLAnNhan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="QLChuVu.resx">
-      <DependentUpon>QLChuVu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="QLCum.resx">
-      <DependentUpon>QLCum.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="QLCuuSV.resx">
-      <DependentUpon>QLCuuSV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QLDuHoc.resx">
       <DependentUpon>QLDuHoc.cs</DependentUpon>

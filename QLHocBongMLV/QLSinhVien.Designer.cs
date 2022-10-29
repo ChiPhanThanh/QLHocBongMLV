@@ -1,7 +1,7 @@
 ﻿
 namespace QLHocBongMLV
 {
-    partial class QlSinhVien
+    partial class QLSinhVien
     {
         /// <summary>
         /// Required designer variable.
@@ -780,16 +780,16 @@ namespace QLHocBongMLV
             this.labelMaSV.Size = new System.Drawing.Size(0, 19);
             this.labelMaSV.TabIndex = 0;
             // 
-            // QlSinhVien
+            // QLSinhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1312, 851);
             this.Controls.Add(this.panelSinhVien);
-            this.Name = "QlSinhVien";
+            this.Name = "QLSinhVien";
             this.Tag = "Quản lí sinh viên";
-            this.Text = "Quản Lý Sinh Viên";
+            this.Text = "QLSinhVien";
             this.panelSinhVien.ResumeLayout(false);
             this.panelSinhVien.PerformLayout();
             this.panel1.ResumeLayout(false);

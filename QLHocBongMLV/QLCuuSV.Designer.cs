@@ -28,17 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // QLCuuSV
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "QLCuuSV";
-            this.Text = "Quản Lý Cựu Sinh Viên";
-            this.ResumeLayout(false);
-
+            this.Text = "QLCuuSV";
         }
 
         #endregion

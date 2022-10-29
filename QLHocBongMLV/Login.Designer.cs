@@ -1,4 +1,4 @@
-﻿
+
 namespace QLHocBongMLV
 {
     partial class Login
@@ -29,6 +29,7 @@ namespace QLHocBongMLV
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtTenTaikhoan = new System.Windows.Forms.TextBox();
@@ -43,15 +44,22 @@ namespace QLHocBongMLV
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.pictureBox4);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.txtPassword);
             this.panel1.Controls.Add(this.txtTenTaikhoan);
             this.panel1.Controls.Add(this.panel3);
@@ -65,8 +73,7 @@ namespace QLHocBongMLV
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(2, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(916, 459);
             this.panel1.TabIndex = 0;
@@ -75,11 +82,15 @@ namespace QLHocBongMLV
             // 
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(502, 234);
+            this.txtPassword.Multiline = true;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(281, 24);
             this.txtPassword.Location = new System.Drawing.Point(502, 233);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(329, 25);
             this.txtPassword.TabIndex = 14;
             // 
             // txtTenTaikhoan
@@ -151,11 +162,13 @@ namespace QLHocBongMLV
             // 
             this.bbtnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(27)))), ((int)(((byte)(68)))));
             this.bbtnThoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bbtnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bbtnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bbtnThoat.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bbtnThoat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bbtnThoat.Location = new System.Drawing.Point(702, 290);
             this.bbtnThoat.Name = "bbtnThoat";
+            this.bbtnThoat.Size = new System.Drawing.Size(138, 53);
             this.bbtnThoat.Size = new System.Drawing.Size(150, 53);
             this.bbtnThoat.TabIndex = 7;
             this.bbtnThoat.Text = "Thoát";
@@ -165,6 +178,8 @@ namespace QLHocBongMLV
             // btnDangNhap
             // 
             this.btnDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(77)))), ((int)(((byte)(102)))));
+            this.btnDangNhap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDangNhap.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangNhap.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -197,24 +212,58 @@ namespace QLHocBongMLV
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(57)))), ((int)(((byte)(57)))));
-            this.label1.Location = new System.Drawing.Point(570, 60);
+            this.label1.Location = new System.Drawing.Point(561, 94);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 46);
+            this.label1.Size = new System.Drawing.Size(173, 35);
             this.label1.TabIndex = 1;
-            this.label1.Text = "LOGIN";
+            this.label1.Text = "Đăng Nhập";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::QLHocBongMLV.Properties.Resources.LOGO_HB;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 60);
+            this.pictureBox1.Location = new System.Drawing.Point(10, 83);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(413, 320);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(789, 233);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(39, 25);
+            this.button1.TabIndex = 17;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(789, 229);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(42, 26);
+            this.button2.TabIndex = 18;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(601, 21);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(82, 70);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 19;
+            this.pictureBox4.TabStop = false;
+            //
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -224,6 +273,9 @@ namespace QLHocBongMLV
             this.ClientSize = new System.Drawing.Size(916, 459);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.HelpButton = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.ImeMode = System.Windows.Forms.ImeMode.On;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
@@ -232,6 +284,7 @@ namespace QLHocBongMLV
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -252,6 +305,9 @@ namespace QLHocBongMLV
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txtTenTaikhoan;
         private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
 

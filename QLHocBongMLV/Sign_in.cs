@@ -89,12 +89,16 @@ namespace QLHocBongMLV
             catch
             {
                 MessageBox.Show("Tên tài khoản này đã được đăng kí!\n Vui lòng đăng kí tên tài khoản khác ");
-
             }
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
+            DialogResult dr = MessageBox.Show(" Bạn có muốn trở về login?", "Thông báo...", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (dr == DialogResult.Yes)
+            {
+                    Login login = new Login();
+                    login.ShowDialog();
             DialogResult dr = MessageBox.Show(" Bạn có muốn thoát không", "Thông báo...", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (dr == DialogResult.Yes)
             {

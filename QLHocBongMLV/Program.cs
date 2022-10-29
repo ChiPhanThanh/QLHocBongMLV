@@ -19,12 +19,10 @@ namespace QLHocBongMLV
             //Application.Run(new Login());
             //Application.Run(new ResetPassWord());
             //Application.Run(new Sign_in());
-           Application.Run(new panelMain());
+            //Application.Run(new panelMain());
             //Application.Run(new QLSinhVien());
             //Application.Run(new QLHocSinh());
-
-            //Chao phan thanh chi
-       
+             Application.Run(new ProgressBarInterface());
         }
     }
 }

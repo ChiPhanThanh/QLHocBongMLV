@@ -383,7 +383,7 @@
             this.Controls.Add(this.txtMaHS);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "QLAnNhan";
-            this.Text = "QLAnNhan";
+            this.Text = "Quản Lý Ân Nhân";
             this.Load += new System.EventHandler(this.QLAnNhan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAN)).EndInit();
             this.ResumeLayout(false);

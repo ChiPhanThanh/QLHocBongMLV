@@ -63,6 +63,16 @@ namespace QLHocBongMLV.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap closed_eye {
+            get {
+                object obj = ResourceManager.GetObject("closed-eye", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dangxuat_16 {
             get {
                 object obj = ResourceManager.GetObject("dangxuat_16", resourceCulture);
@@ -106,6 +116,26 @@ namespace QLHocBongMLV.Properties {
         internal static System.Drawing.Bitmap home_16 {
             get {
                 object obj = ResourceManager.GetObject("home_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_hide_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-hide-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_1040 {
+            get {
+                object obj = ResourceManager.GetObject("IMG_1040", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

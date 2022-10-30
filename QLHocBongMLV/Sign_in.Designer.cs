@@ -66,6 +66,7 @@ namespace QLHocBongMLV
             // 
             this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(27)))), ((int)(((byte)(68)))));
             this.btnThoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThoat.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnThoat.Location = new System.Drawing.Point(751, 424);
@@ -79,6 +80,7 @@ namespace QLHocBongMLV
             // btnDangKi
             // 
             this.btnDangKi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(77)))), ((int)(((byte)(102)))));
+            this.btnDangKi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDangKi.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangKi.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnDangKi.Location = new System.Drawing.Point(499, 424);

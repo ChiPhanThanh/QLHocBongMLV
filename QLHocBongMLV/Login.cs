@@ -22,12 +22,14 @@ namespace QLHocBongMLV
 
         private void linkQuenMK_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Hide();
             ResetPassWord resetPass = new ResetPassWord();
             resetPass.ShowDialog();
         }
 
         private void linkDangKi_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Hide();
             Sign_in sign_In = new Sign_in();
             sign_In.ShowDialog();
             
@@ -82,7 +84,22 @@ namespace QLHocBongMLV
             }
         }
 
-  
-    
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.PasswordChar == '*')
+            {
+                button2.BringToFront();
+                txtPassword.PasswordChar = '\0';
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.PasswordChar == '\0')
+            {
+                button1.BringToFront();
+                txtPassword.PasswordChar = '*';
+            }
+        }
     }
 }

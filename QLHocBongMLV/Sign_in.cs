@@ -41,12 +41,12 @@ namespace QLHocBongMLV
             string tenTK = txtNhapUser.Text;
             string matKhau = txtPassword.Text;
             string xacnhanMatKhau = txtPasswordAgain.Text;
-            string Email = txtEmail.Text; 
+            string Email = txtEmail.Text;
 
             //Kiểm tra CheckAccount
             if (!CheckAccount(tenTK))
             {
-                MessageBox.Show(" Vui lòng nhập tên tài khoản dài 6 - 20 kí tự \n Gồm các ký tự chữ và số \n Chữ hoa và chữ thường"); 
+                MessageBox.Show(" Vui lòng nhập tên tài khoản dài 6 - 20 kí tự \n Gồm các ký tự chữ và số \n Chữ hoa và chữ thường");
                 return;
             }
             //check password
@@ -56,9 +56,9 @@ namespace QLHocBongMLV
                 return;
             }
             //check-xac nhan mật khẩu
-            if( xacnhanMatKhau != matKhau)
+            if (xacnhanMatKhau != matKhau)
             {
-                MessageBox.Show(" Vui lòng xác nhận mật khẩu chính xác"); 
+                MessageBox.Show(" Vui lòng xác nhận mật khẩu chính xác");
                 return;
             }
 
@@ -70,7 +70,7 @@ namespace QLHocBongMLV
             }
 
             //Confirm 1 Email for all - chỉ cho đăng kí một Email một lần duy nhất
-            if( modify.TaiKhoans(" Select * from tblQuanlitaikhoan where Email = '" + Email + "'" ).Count != 0)
+            if (modify.TaiKhoans(" Select * from tblQuanlitaikhoan where Email = '" + Email + "'").Count != 0)
             {
                 MessageBox.Show(" Email này đã được đăng kí, vui lòng đăng kí Email khác");
                 return;
@@ -79,7 +79,7 @@ namespace QLHocBongMLV
             //inset vào bảng
             try
             {
-                string query = "Insert into tblQuanlitaikhoan values ('" + tenTK + "','"+matKhau+"', '"+Email+"')";
+                string query = "Insert into tblQuanlitaikhoan values ('" + tenTK + "','" + matKhau + "', '" + Email + "')";
                 modify.Command(query);
                 if (MessageBox.Show("Đăng kí thành công", " Thông báo..", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                 {
@@ -89,22 +89,24 @@ namespace QLHocBongMLV
             catch
             {
                 MessageBox.Show("Tên tài khoản này đã được đăng kí!\n Vui lòng đăng kí tên tài khoản khác ");
-
             }
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            DialogResult dr = MessageBox.Show(" Bạn có muốn thoát không", "Thông báo...", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            DialogResult dr = MessageBox.Show(" Bạn có muốn trở về login?", "Thông báo...", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (dr == DialogResult.Yes)
             {
-                Application.Exit();
+                Login login = new Login();
+                login.ShowDialog();
             }
             else
             {
                 return;
             }
+            }
         }
-     
     }
 }
+
+

@@ -99,10 +99,6 @@ namespace QLHocBongMLV
             {
                     Login login = new Login();
                     login.ShowDialog();
-            DialogResult dr = MessageBox.Show(" Bạn có muốn thoát không", "Thông báo...", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-            if (dr == DialogResult.Yes)
-            {
-                Application.Exit();
             }
             else
             {

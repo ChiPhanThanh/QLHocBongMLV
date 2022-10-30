@@ -104,10 +104,8 @@ namespace QLHocBongMLV
             {
                 return;
             }
+            }
         }
     }
-}
-
-
 
 

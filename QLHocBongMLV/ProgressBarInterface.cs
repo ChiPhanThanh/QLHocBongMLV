@@ -26,8 +26,7 @@ namespace QLHocBongMLV
                 timer1.Enabled = false;
                 this.Hide();
                 Login login = new Login();
-                login.ShowDialog();
-                
+                login.ShowDialog();   
             }
         }
 

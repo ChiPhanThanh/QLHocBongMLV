@@ -339,7 +339,7 @@ namespace QLHocBongMLV
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 19.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
-            this.label1.Location = new System.Drawing.Point(435, 19);
+            this.label1.Location = new System.Drawing.Point(401, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(594, 37);
             this.label1.TabIndex = 1;
@@ -375,7 +375,7 @@ namespace QLHocBongMLV
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(641, 598);
+            this.label2.Location = new System.Drawing.Point(634, 584);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(245, 57);
             this.label2.TabIndex = 1;
@@ -387,7 +387,7 @@ namespace QLHocBongMLV
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = global::QLHocBongMLV.Properties.Resources.LOGO_HB;
-            this.pictureBox2.Location = new System.Drawing.Point(508, 175);
+            this.pictureBox2.Location = new System.Drawing.Point(481, 134);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(467, 420);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

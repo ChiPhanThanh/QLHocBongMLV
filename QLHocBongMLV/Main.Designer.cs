@@ -29,6 +29,7 @@ namespace QLHocBongMLV
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(panelMain));
             this.panel1Menu = new System.Windows.Forms.Panel();
             this.btnDangxuat = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -78,9 +79,8 @@ namespace QLHocBongMLV
             this.panel1Menu.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1Menu.Location = new System.Drawing.Point(0, 0);
             this.panel1Menu.Name = "panel1Menu";
-            this.panel1Menu.Size = new System.Drawing.Size(307, 833);
+            this.panel1Menu.Size = new System.Drawing.Size(307, 853);
             this.panel1Menu.TabIndex = 0;
-            this.panel1Menu.UseWaitCursor = true;
             this.panel1Menu.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1Menu_Paint);
             // 
             // btnDangxuat
@@ -93,7 +93,7 @@ namespace QLHocBongMLV
             this.btnDangxuat.ForeColor = System.Drawing.Color.White;
             this.btnDangxuat.Image = global::QLHocBongMLV.Properties.Resources.dangxuat_16;
             this.btnDangxuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDangxuat.Location = new System.Drawing.Point(0, 783);
+            this.btnDangxuat.Location = new System.Drawing.Point(0, 803);
             this.btnDangxuat.Name = "btnDangxuat";
             this.btnDangxuat.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnDangxuat.Size = new System.Drawing.Size(307, 50);
@@ -101,7 +101,6 @@ namespace QLHocBongMLV
             this.btnDangxuat.Text = "  Đăng xuất";
             this.btnDangxuat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDangxuat.UseVisualStyleBackColor = false;
-            this.btnDangxuat.UseWaitCursor = true;
             this.btnDangxuat.Click += new System.EventHandler(this.btnDangxuat_Click);
             // 
             // button11
@@ -121,7 +120,6 @@ namespace QLHocBongMLV
             this.button11.Text = "  Quản lý Cựu Viên";
             this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button11.UseVisualStyleBackColor = false;
-            this.button11.UseWaitCursor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // btnTaiChinh
@@ -141,7 +139,6 @@ namespace QLHocBongMLV
             this.btnTaiChinh.Text = "  Quản lý Tài Chính";
             this.btnTaiChinh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTaiChinh.UseVisualStyleBackColor = false;
-            this.btnTaiChinh.UseWaitCursor = true;
             this.btnTaiChinh.Click += new System.EventHandler(this.btnTaiChinh_Click);
             // 
             // btnDiem
@@ -161,7 +158,6 @@ namespace QLHocBongMLV
             this.btnDiem.Text = "  Quản lý Điểm";
             this.btnDiem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDiem.UseVisualStyleBackColor = false;
-            this.btnDiem.UseWaitCursor = true;
             this.btnDiem.Click += new System.EventHandler(this.btnDiem_Click);
             // 
             // btnTaiKhoan
@@ -181,7 +177,6 @@ namespace QLHocBongMLV
             this.btnTaiKhoan.Text = "  Quản lý Tài Khoản";
             this.btnTaiKhoan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTaiKhoan.UseVisualStyleBackColor = false;
-            this.btnTaiKhoan.UseWaitCursor = true;
             this.btnTaiKhoan.Click += new System.EventHandler(this.btnTaiKhoan_Click);
             // 
             // btnCV
@@ -201,7 +196,6 @@ namespace QLHocBongMLV
             this.btnCV.Text = "  Quản lý Chức Vụ";
             this.btnCV.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCV.UseVisualStyleBackColor = false;
-            this.btnCV.UseWaitCursor = true;
             this.btnCV.Click += new System.EventHandler(this.btnCV_Click);
             // 
             // btnCum
@@ -221,7 +215,6 @@ namespace QLHocBongMLV
             this.btnCum.Text = "  Quản lý Cụm";
             this.btnCum.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCum.UseVisualStyleBackColor = false;
-            this.btnCum.UseWaitCursor = true;
             this.btnCum.Click += new System.EventHandler(this.btnCum_Click);
             // 
             // btnDH
@@ -241,7 +234,6 @@ namespace QLHocBongMLV
             this.btnDH.Text = "  Quản lý Du Học";
             this.btnDH.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDH.UseVisualStyleBackColor = false;
-            this.btnDH.UseWaitCursor = true;
             this.btnDH.Click += new System.EventHandler(this.btnDH_Click);
             // 
             // tbnTS
@@ -261,7 +253,6 @@ namespace QLHocBongMLV
             this.tbnTS.Text = "  Quản lý Tu Sĩ";
             this.tbnTS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.tbnTS.UseVisualStyleBackColor = false;
-            this.tbnTS.UseWaitCursor = true;
             this.tbnTS.Click += new System.EventHandler(this.tbnTS_Click);
             // 
             // btnAN
@@ -281,7 +272,6 @@ namespace QLHocBongMLV
             this.btnAN.Text = "  Quản lý Ân Nhân";
             this.btnAN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAN.UseVisualStyleBackColor = false;
-            this.btnAN.UseWaitCursor = true;
             this.btnAN.Click += new System.EventHandler(this.btnAN_Click);
             // 
             // btnHS
@@ -301,7 +291,6 @@ namespace QLHocBongMLV
             this.btnHS.Text = "  Quản lý Học Sinh";
             this.btnHS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHS.UseVisualStyleBackColor = false;
-            this.btnHS.UseWaitCursor = true;
             this.btnHS.Click += new System.EventHandler(this.btnHS_Click);
             // 
             // btnQLSV
@@ -311,7 +300,7 @@ namespace QLHocBongMLV
             this.btnQLSV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQLSV.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLSV.ForeColor = System.Drawing.Color.White;
-            this.btnQLSV.Image = global::QLHocBongMLV.Properties.Resources.folder_32;
+            this.btnQLSV.Image = ((System.Drawing.Image)(resources.GetObject("btnQLSV.Image")));
             this.btnQLSV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnQLSV.Location = new System.Drawing.Point(0, 83);
             this.btnQLSV.Name = "btnQLSV";
@@ -321,7 +310,6 @@ namespace QLHocBongMLV
             this.btnQLSV.Text = "  Quản lý Sinh Viên";
             this.btnQLSV.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnQLSV.UseVisualStyleBackColor = false;
-            this.btnQLSV.UseWaitCursor = true;
             this.btnQLSV.Click += new System.EventHandler(this.btnQLSV_Click);
             // 
             // panelLogo
@@ -332,7 +320,6 @@ namespace QLHocBongMLV
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(307, 83);
             this.panelLogo.TabIndex = 0;
-            this.panelLogo.UseWaitCursor = true;
             // 
             // pictureBox1
             // 
@@ -343,31 +330,30 @@ namespace QLHocBongMLV
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.UseWaitCursor = true;
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 19.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
-            this.label1.Location = new System.Drawing.Point(502, 19);
+            this.label1.Location = new System.Drawing.Point(435, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(594, 37);
             this.label1.TabIndex = 1;
             this.label1.Text = "CHÀO MỪNG BẠN ĐẾN VỚI QUẢN TRỊ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.UseWaitCursor = true;
             // 
             // panelTitle
             // 
             this.panelTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panelTitle.Controls.Add(this.label1);
-            this.panelTitle.Location = new System.Drawing.Point(307, 0);
+            this.panelTitle.Location = new System.Drawing.Point(307, 10);
             this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(1617, 71);
+            this.panelTitle.Size = new System.Drawing.Size(1657, 71);
             this.panelTitle.TabIndex = 2;
-            this.panelTitle.UseWaitCursor = true;
             // 
             // panelDestop
             // 
@@ -376,50 +362,53 @@ namespace QLHocBongMLV
             this.panelDestop.Controls.Add(this.label2);
             this.panelDestop.Controls.Add(this.pictureBox2);
             this.panelDestop.Enabled = false;
-            this.panelDestop.Location = new System.Drawing.Point(307, 59);
+            this.panelDestop.Location = new System.Drawing.Point(307, 69);
             this.panelDestop.Name = "panelDestop";
-            this.panelDestop.Size = new System.Drawing.Size(1615, 774);
+            this.panelDestop.Size = new System.Drawing.Size(1655, 774);
             this.panelDestop.TabIndex = 3;
-            this.panelDestop.UseWaitCursor = true;
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(650, 663);
+            this.label2.Location = new System.Drawing.Point(641, 598);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(245, 57);
             this.label2.TabIndex = 1;
             this.label2.Text = "MLV 2011";
-            this.label2.UseWaitCursor = true;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = global::QLHocBongMLV.Properties.Resources.LOGO_HB;
-            this.pictureBox2.Location = new System.Drawing.Point(522, 149);
+            this.pictureBox2.Location = new System.Drawing.Point(508, 175);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(520, 477);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.Size = new System.Drawing.Size(467, 420);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.UseWaitCursor = true;
             // 
             // panelMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1722, 833);
+            this.ClientSize = new System.Drawing.Size(1762, 853);
             this.Controls.Add(this.panelDestop);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panel1Menu);
-            this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "panelMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Main";
-            this.UseWaitCursor = true;
+            this.Text = "Trang Quản Trị";
             this.panel1Menu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

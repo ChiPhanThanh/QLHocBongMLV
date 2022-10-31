@@ -387,7 +387,7 @@ namespace QLHocBongMLV
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = global::QLHocBongMLV.Properties.Resources.LOGO_HB;
-            this.pictureBox2.Location = new System.Drawing.Point(481, 134);
+            this.pictureBox2.Location = new System.Drawing.Point(472, 134);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(467, 420);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

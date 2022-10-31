@@ -101,6 +101,17 @@ namespace QLHocBongMLV
 
         }
 
-     
+        private void btnDangxuat_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show(" Bạn có muốn đăng xuất không", "Thông báo...", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (dr == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                return;
+            }
+        }
     }
 }

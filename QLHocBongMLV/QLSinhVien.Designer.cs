@@ -159,25 +159,25 @@ namespace QLHocBongMLV
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.dataGridViewSV);
-            this.panel1.Location = new System.Drawing.Point(0, 684);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 662);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1312, 167);
+            this.panel1.Size = new System.Drawing.Size(1312, 189);
             this.panel1.TabIndex = 56;
             // 
             // dataGridViewSV
             // 
             this.dataGridViewSV.AllowDrop = true;
+            this.dataGridViewSV.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.dataGridViewSV.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(95)))), ((int)(((byte)(153)))));
             this.dataGridViewSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewSV.Location = new System.Drawing.Point(57, -1);
+            this.dataGridViewSV.Location = new System.Drawing.Point(53, -70);
             this.dataGridViewSV.Name = "dataGridViewSV";
             this.dataGridViewSV.RowHeadersWidth = 51;
             this.dataGridViewSV.RowTemplate.Height = 24;
-            this.dataGridViewSV.Size = new System.Drawing.Size(1187, 165);
+            this.dataGridViewSV.Size = new System.Drawing.Size(1187, 233);
             this.dataGridViewSV.TabIndex = 0;
             // 
             // labelMaSinhVien
@@ -311,19 +311,22 @@ namespace QLHocBongMLV
             // 
             // btnTimkiemSV
             // 
+            this.btnTimkiemSV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(77)))), ((int)(((byte)(102)))));
             this.btnTimkiemSV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTimkiemSV.Location = new System.Drawing.Point(732, 484);
+            this.btnTimkiemSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimkiemSV.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnTimkiemSV.Location = new System.Drawing.Point(734, 467);
             this.btnTimkiemSV.Name = "btnTimkiemSV";
             this.btnTimkiemSV.Size = new System.Drawing.Size(100, 37);
             this.btnTimkiemSV.TabIndex = 44;
             this.btnTimkiemSV.Text = "Tìm kiếm";
-            this.btnTimkiemSV.UseVisualStyleBackColor = true;
+            this.btnTimkiemSV.UseVisualStyleBackColor = false;
             // 
             // txtTimKiemSV
             // 
             this.txtTimKiemSV.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtTimKiemSV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTimKiemSV.Location = new System.Drawing.Point(190, 484);
+            this.txtTimKiemSV.Location = new System.Drawing.Point(192, 467);
             this.txtTimKiemSV.Multiline = true;
             this.txtTimKiemSV.Name = "txtTimKiemSV";
             this.txtTimKiemSV.Size = new System.Drawing.Size(547, 37);
@@ -334,7 +337,7 @@ namespace QLHocBongMLV
             this.labelTImKiem.AutoSize = true;
             this.labelTImKiem.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTImKiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
-            this.labelTImKiem.Location = new System.Drawing.Point(30, 502);
+            this.labelTImKiem.Location = new System.Drawing.Point(32, 485);
             this.labelTImKiem.Name = "labelTImKiem";
             this.labelTImKiem.Size = new System.Drawing.Size(78, 19);
             this.labelTImKiem.TabIndex = 42;

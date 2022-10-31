@@ -85,7 +85,7 @@
             this.dataGridViewCV.Name = "dataGridViewCV";
             this.dataGridViewCV.RowHeadersWidth = 51;
             this.dataGridViewCV.RowTemplate.Height = 24;
-            this.dataGridViewCV.Size = new System.Drawing.Size(1187, 250);
+            this.dataGridViewCV.Size = new System.Drawing.Size(1187, 225);
             this.dataGridViewCV.TabIndex = 154;
             // 
             // btnXoaCV
@@ -142,19 +142,23 @@
             // 
             // btnTimkiemCV
             // 
-            this.btnTimkiemCV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTimkiemCV.Location = new System.Drawing.Point(816, 251);
+            this.btnTimkiemCV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(77)))), ((int)(((byte)(102)))));
+            this.btnTimkiemCV.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnTimkiemCV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimkiemCV.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnTimkiemCV.Location = new System.Drawing.Point(805, 251);
             this.btnTimkiemCV.Name = "btnTimkiemCV";
             this.btnTimkiemCV.Size = new System.Drawing.Size(100, 37);
             this.btnTimkiemCV.TabIndex = 171;
             this.btnTimkiemCV.Text = "Tìm kiếm";
-            this.btnTimkiemCV.UseVisualStyleBackColor = true;
+            this.btnTimkiemCV.UseVisualStyleBackColor = false;
             // 
             // txtTImKiemCV
             // 
             this.txtTImKiemCV.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtTImKiemCV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTImKiemCV.Location = new System.Drawing.Point(274, 251);
+            this.txtTImKiemCV.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txtTImKiemCV.Location = new System.Drawing.Point(263, 251);
             this.txtTImKiemCV.Multiline = true;
             this.txtTImKiemCV.Name = "txtTImKiemCV";
             this.txtTImKiemCV.Size = new System.Drawing.Size(547, 37);

@@ -350,9 +350,9 @@ namespace QLHocBongMLV
             // 
             this.panelTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panelTitle.Controls.Add(this.label1);
-            this.panelTitle.Location = new System.Drawing.Point(307, 10);
+            this.panelTitle.Location = new System.Drawing.Point(313, 0);
             this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(1657, 71);
+            this.panelTitle.Size = new System.Drawing.Size(1650, 69);
             this.panelTitle.TabIndex = 2;
             // 
             // panelDestop
@@ -362,9 +362,9 @@ namespace QLHocBongMLV
             this.panelDestop.Controls.Add(this.label2);
             this.panelDestop.Controls.Add(this.pictureBox2);
             this.panelDestop.Enabled = false;
-            this.panelDestop.Location = new System.Drawing.Point(307, 69);
+            this.panelDestop.Location = new System.Drawing.Point(313, 74);
             this.panelDestop.Name = "panelDestop";
-            this.panelDestop.Size = new System.Drawing.Size(1655, 774);
+            this.panelDestop.Size = new System.Drawing.Size(1800, 880);
             this.panelDestop.TabIndex = 3;
             // 
             // label2
@@ -375,7 +375,7 @@ namespace QLHocBongMLV
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(634, 584);
+            this.label2.Location = new System.Drawing.Point(681, 595);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(245, 57);
             this.label2.TabIndex = 1;
@@ -389,26 +389,29 @@ namespace QLHocBongMLV
             this.pictureBox2.Image = global::QLHocBongMLV.Properties.Resources.LOGO_HB;
             this.pictureBox2.Location = new System.Drawing.Point(472, 134);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(467, 420);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.Size = new System.Drawing.Size(610, 406);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
             // panelMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1762, 853);
+            this.ClientSize = new System.Drawing.Size(1782, 853);
             this.Controls.Add(this.panelDestop);
-            this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panel1Menu);
+            this.Controls.Add(this.panelTitle);
             this.Cursor = System.Windows.Forms.Cursors.Default;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.ImeMode = System.Windows.Forms.ImeMode.On;
             this.Name = "panelMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Trang Quản Trị";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.panel1Menu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

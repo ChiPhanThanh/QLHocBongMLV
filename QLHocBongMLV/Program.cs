@@ -17,6 +17,7 @@ namespace QLHocBongMLV
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new ProgressBarInterface());
+            //Application.Run(new panelMain());
         }
     }
 }

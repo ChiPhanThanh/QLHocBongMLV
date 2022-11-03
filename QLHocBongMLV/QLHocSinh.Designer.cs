@@ -103,13 +103,11 @@
             // 
             // dataGridViewHS
             // 
-            this.dataGridViewHS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewHS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewHS.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(95)))), ((int)(((byte)(153)))));
             this.dataGridViewHS.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewHS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewHS.Location = new System.Drawing.Point(71, 534);
+            this.dataGridViewHS.Location = new System.Drawing.Point(78, 537);
             this.dataGridViewHS.Name = "dataGridViewHS";
             this.dataGridViewHS.RowHeadersWidth = 51;
             this.dataGridViewHS.RowTemplate.Height = 24;
@@ -246,7 +244,7 @@
             this.textBox21.Location = new System.Drawing.Point(1048, 198);
             this.textBox21.Multiline = true;
             this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(277, 147);
+            this.textBox21.Size = new System.Drawing.Size(256, 147);
             this.textBox21.TabIndex = 97;
             // 
             // labelGhiChu

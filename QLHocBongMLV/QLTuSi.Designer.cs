@@ -100,8 +100,7 @@
             // 
             // dataGridViewTS
             // 
-            this.dataGridViewTS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.dataGridViewTS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewTS.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(95)))), ((int)(((byte)(153)))));
             this.dataGridViewTS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -364,9 +363,9 @@
             this.btnXuatFile.ForeColor = System.Drawing.Color.Transparent;
             this.btnXuatFile.Image = ((System.Drawing.Image)(resources.GetObject("btnXuatFile.Image")));
             this.btnXuatFile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXuatFile.Location = new System.Drawing.Point(1132, 738);
+            this.btnXuatFile.Location = new System.Drawing.Point(1132, 726);
             this.btnXuatFile.Name = "btnXuatFile";
-            this.btnXuatFile.Size = new System.Drawing.Size(110, 35);
+            this.btnXuatFile.Size = new System.Drawing.Size(110, 47);
             this.btnXuatFile.TabIndex = 182;
             this.btnXuatFile.Text = "       Xuất File";
             this.btnXuatFile.UseVisualStyleBackColor = false;

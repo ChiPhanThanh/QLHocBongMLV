@@ -215,7 +215,7 @@
             this.labelMaCum.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
             this.labelMaCum.Location = new System.Drawing.Point(137, 56);
             this.labelMaCum.Name = "labelMaCum";
-            this.labelMaCum.Size = new System.Drawing.Size(90, 24);
+            this.labelMaCum.Size = new System.Drawing.Size(72, 19);
             this.labelMaCum.TabIndex = 184;
             this.labelMaCum.Text = "Mã Cụm";
             // 
@@ -255,6 +255,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1083, 732);
             this.Controls.Add(this.btnThoatCum);
             this.Controls.Add(this.dataGridViewCum);
@@ -275,6 +276,7 @@
             this.Controls.Add(this.txtHoTenCum);
             this.Controls.Add(this.labelHoTenCumSV);
             this.Name = "QLCum";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Quan Lý Cụm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCum)).EndInit();
             this.ResumeLayout(false);

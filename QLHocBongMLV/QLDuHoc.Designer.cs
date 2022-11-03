@@ -359,9 +359,9 @@
             this.btnXuatFile.ForeColor = System.Drawing.Color.Transparent;
             this.btnXuatFile.Image = ((System.Drawing.Image)(resources.GetObject("btnXuatFile.Image")));
             this.btnXuatFile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXuatFile.Location = new System.Drawing.Point(1122, 742);
+            this.btnXuatFile.Location = new System.Drawing.Point(1112, 741);
             this.btnXuatFile.Name = "btnXuatFile";
-            this.btnXuatFile.Size = new System.Drawing.Size(110, 35);
+            this.btnXuatFile.Size = new System.Drawing.Size(125, 51);
             this.btnXuatFile.TabIndex = 182;
             this.btnXuatFile.Text = "       Xuất File";
             this.btnXuatFile.UseVisualStyleBackColor = false;

@@ -103,11 +103,10 @@
             // 
             // dataGridViewHS
             // 
-            this.dataGridViewHS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewHS.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(95)))), ((int)(((byte)(153)))));
             this.dataGridViewHS.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewHS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewHS.Location = new System.Drawing.Point(78, 537);
+            this.dataGridViewHS.Location = new System.Drawing.Point(89, 514);
             this.dataGridViewHS.Name = "dataGridViewHS";
             this.dataGridViewHS.RowHeadersWidth = 51;
             this.dataGridViewHS.RowTemplate.Height = 24;

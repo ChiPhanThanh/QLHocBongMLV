@@ -169,16 +169,16 @@ namespace QLHocBongMLV
             this.btnXuatFile.ForeColor = System.Drawing.Color.Transparent;
             this.btnXuatFile.Image = ((System.Drawing.Image)(resources.GetObject("btnXuatFile.Image")));
             this.btnXuatFile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXuatFile.Location = new System.Drawing.Point(1018, 843);
+            this.btnXuatFile.Location = new System.Drawing.Point(1090, 840);
             this.btnXuatFile.Name = "btnXuatFile";
-            this.btnXuatFile.Size = new System.Drawing.Size(110, 35);
+            this.btnXuatFile.Size = new System.Drawing.Size(135, 46);
             this.btnXuatFile.TabIndex = 58;
             this.btnXuatFile.Text = "       Xuất File";
             this.btnXuatFile.UseVisualStyleBackColor = false;
             // 
             // txtTong
             // 
-            this.txtTong.Location = new System.Drawing.Point(883, 852);
+            this.txtTong.Location = new System.Drawing.Point(972, 852);
             this.txtTong.Multiline = true;
             this.txtTong.Name = "txtTong";
             this.txtTong.Size = new System.Drawing.Size(52, 26);
@@ -188,7 +188,7 @@ namespace QLHocBongMLV
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(826, 852);
+            this.label1.Location = new System.Drawing.Point(915, 852);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 20);
             this.label1.TabIndex = 56;
@@ -199,7 +199,7 @@ namespace QLHocBongMLV
             this.dataGridViewSV.AllowDrop = true;
             this.dataGridViewSV.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(95)))), ((int)(((byte)(153)))));
             this.dataGridViewSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewSV.Location = new System.Drawing.Point(55, 576);
+            this.dataGridViewSV.Location = new System.Drawing.Point(57, 566);
             this.dataGridViewSV.Name = "dataGridViewSV";
             this.dataGridViewSV.RowHeadersWidth = 51;
             this.dataGridViewSV.RowTemplate.Height = 24;
@@ -817,7 +817,7 @@ namespace QLHocBongMLV
             this.ClientSize = new System.Drawing.Size(1312, 890);
             this.Controls.Add(this.panelSinhVien);
             this.Name = "QlSinhVien";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Tag = "Quản lí sinh viên";
             this.Text = "Quản Lý Sinh Viên";
             this.panelSinhVien.ResumeLayout(false);

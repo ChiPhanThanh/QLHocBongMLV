@@ -79,7 +79,7 @@ namespace QLHocBongMLV
             this.panel1Menu.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1Menu.Location = new System.Drawing.Point(0, 0);
             this.panel1Menu.Name = "panel1Menu";
-            this.panel1Menu.Size = new System.Drawing.Size(307, 845);
+            this.panel1Menu.Size = new System.Drawing.Size(307, 813);
             this.panel1Menu.TabIndex = 0;
             this.panel1Menu.UseWaitCursor = true;
             this.panel1Menu.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1Menu_Paint);
@@ -94,7 +94,7 @@ namespace QLHocBongMLV
             this.btnDangxuat.ForeColor = System.Drawing.Color.White;
             this.btnDangxuat.Image = global::QLHocBongMLV.Properties.Resources.dangxuat_16;
             this.btnDangxuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDangxuat.Location = new System.Drawing.Point(0, 795);
+            this.btnDangxuat.Location = new System.Drawing.Point(0, 763);
             this.btnDangxuat.Name = "btnDangxuat";
             this.btnDangxuat.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnDangxuat.Size = new System.Drawing.Size(307, 50);
@@ -348,15 +348,12 @@ namespace QLHocBongMLV
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 19.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
-            this.label1.Location = new System.Drawing.Point(401, 19);
+            this.label1.Location = new System.Drawing.Point(251, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(594, 37);
+            this.label1.Size = new System.Drawing.Size(528, 33);
             this.label1.TabIndex = 1;
             this.label1.Text = "CHÀO MỪNG BẠN ĐẾN VỚI QUẢN TRỊ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -366,9 +363,9 @@ namespace QLHocBongMLV
             // 
             this.panelTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panelTitle.Controls.Add(this.label1);
-            this.panelTitle.Location = new System.Drawing.Point(313, -4);
+            this.panelTitle.Location = new System.Drawing.Point(313, 0);
             this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(1200, 69);
+            this.panelTitle.Size = new System.Drawing.Size(1200, 49);
             this.panelTitle.TabIndex = 2;
             this.panelTitle.UseWaitCursor = true;
             // 
@@ -379,7 +376,7 @@ namespace QLHocBongMLV
             this.panelDestop.Controls.Add(this.label2);
             this.panelDestop.Controls.Add(this.pictureBox2);
             this.panelDestop.Enabled = false;
-            this.panelDestop.Location = new System.Drawing.Point(313, 70);
+            this.panelDestop.Location = new System.Drawing.Point(313, 54);
             this.panelDestop.Name = "panelDestop";
             this.panelDestop.Size = new System.Drawing.Size(1350, 880);
             this.panelDestop.TabIndex = 3;
@@ -393,7 +390,7 @@ namespace QLHocBongMLV
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(681, 595);
+            this.label2.Location = new System.Drawing.Point(436, 489);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(245, 57);
             this.label2.TabIndex = 1;
@@ -406,9 +403,9 @@ namespace QLHocBongMLV
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = global::QLHocBongMLV.Properties.Resources.LOGO_HB;
-            this.pictureBox2.Location = new System.Drawing.Point(472, 134);
+            this.pictureBox2.Location = new System.Drawing.Point(410, 165);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(160, 406);
+            this.pictureBox2.Size = new System.Drawing.Size(288, 351);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -419,16 +416,18 @@ namespace QLHocBongMLV
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1332, 845);
+            this.ClientSize = new System.Drawing.Size(1332, 813);
             this.Controls.Add(this.panelDestop);
             this.Controls.Add(this.panel1Menu);
             this.Controls.Add(this.panelTitle);
             this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.HelpButton = true;
             this.Name = "panelMain";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Main";
             this.UseWaitCursor = true;
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.panel1Menu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

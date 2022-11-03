@@ -403,15 +403,17 @@ namespace QLHocBongMLV
             this.Controls.Add(this.panelDestop);
             this.Controls.Add(this.panel1Menu);
             this.Controls.Add(this.panelTitle);
+            this.Controls.Add(this.panel1Menu);
+            this.Controls.Add(this.panelTitle);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.HelpButton = true;
+
             this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.ImeMode = System.Windows.Forms.ImeMode.On;
             this.Name = "panelMain";
-            this.Text = "Trang Quản Trị";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Main";
+            this.UseWaitCursor = true;
             this.panel1Menu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

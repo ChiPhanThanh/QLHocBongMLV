@@ -368,7 +368,7 @@ namespace QLHocBongMLV
             this.panelTitle.Controls.Add(this.label1);
             this.panelTitle.Location = new System.Drawing.Point(313, -4);
             this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(1408, 69);
+            this.panelTitle.Size = new System.Drawing.Size(1200, 69);
             this.panelTitle.TabIndex = 2;
             this.panelTitle.UseWaitCursor = true;
             // 
@@ -381,7 +381,7 @@ namespace QLHocBongMLV
             this.panelDestop.Enabled = false;
             this.panelDestop.Location = new System.Drawing.Point(313, 70);
             this.panelDestop.Name = "panelDestop";
-            this.panelDestop.Size = new System.Drawing.Size(1558, 880);
+            this.panelDestop.Size = new System.Drawing.Size(1350, 880);
             this.panelDestop.TabIndex = 3;
             this.panelDestop.UseWaitCursor = true;
             // 
@@ -408,7 +408,7 @@ namespace QLHocBongMLV
             this.pictureBox2.Image = global::QLHocBongMLV.Properties.Resources.LOGO_HB;
             this.pictureBox2.Location = new System.Drawing.Point(472, 134);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(368, 406);
+            this.pictureBox2.Size = new System.Drawing.Size(160, 406);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -419,18 +419,12 @@ namespace QLHocBongMLV
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1540, 845);
+            this.ClientSize = new System.Drawing.Size(1332, 845);
             this.Controls.Add(this.panelDestop);
             this.Controls.Add(this.panel1Menu);
             this.Controls.Add(this.panelTitle);
-            this.Controls.Add(this.panel1Menu);
-            this.Controls.Add(this.panelTitle);
-            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.HelpButton = true;
-
-            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Name = "panelMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";

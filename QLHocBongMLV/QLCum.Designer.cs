@@ -276,7 +276,7 @@
             this.Controls.Add(this.txtHoTenCum);
             this.Controls.Add(this.labelHoTenCumSV);
             this.Name = "QLCum";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quan Lý Cụm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCum)).EndInit();
             this.ResumeLayout(false);

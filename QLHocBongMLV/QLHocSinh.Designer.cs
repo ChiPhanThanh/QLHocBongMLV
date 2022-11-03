@@ -550,16 +550,16 @@
             this.btnXuatFile.ForeColor = System.Drawing.Color.Transparent;
             this.btnXuatFile.Image = ((System.Drawing.Image)(resources.GetObject("btnXuatFile.Image")));
             this.btnXuatFile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXuatFile.Location = new System.Drawing.Point(1101, 881);
+            this.btnXuatFile.Location = new System.Drawing.Point(1166, 848);
             this.btnXuatFile.Name = "btnXuatFile";
-            this.btnXuatFile.Size = new System.Drawing.Size(110, 35);
+            this.btnXuatFile.Size = new System.Drawing.Size(110, 53);
             this.btnXuatFile.TabIndex = 113;
             this.btnXuatFile.Text = "       Xuất File";
             this.btnXuatFile.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(966, 890);
+            this.textBox1.Location = new System.Drawing.Point(1031, 875);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(52, 26);
@@ -569,7 +569,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(909, 890);
+            this.label1.Location = new System.Drawing.Point(974, 875);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 20);
             this.label1.TabIndex = 111;
@@ -580,7 +580,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1339, 926);
+            this.ClientSize = new System.Drawing.Size(1339, 909);
             this.Controls.Add(this.btnXuatFile);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);

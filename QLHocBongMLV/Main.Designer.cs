@@ -79,7 +79,7 @@ namespace QLHocBongMLV
             this.panel1Menu.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1Menu.Location = new System.Drawing.Point(0, 0);
             this.panel1Menu.Name = "panel1Menu";
-            this.panel1Menu.Size = new System.Drawing.Size(307, 853);
+            this.panel1Menu.Size = new System.Drawing.Size(307, 845);
             this.panel1Menu.TabIndex = 0;
             this.panel1Menu.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1Menu_Paint);
             // 
@@ -93,7 +93,7 @@ namespace QLHocBongMLV
             this.btnDangxuat.ForeColor = System.Drawing.Color.White;
             this.btnDangxuat.Image = global::QLHocBongMLV.Properties.Resources.dangxuat_16;
             this.btnDangxuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDangxuat.Location = new System.Drawing.Point(0, 803);
+            this.btnDangxuat.Location = new System.Drawing.Point(0, 795);
             this.btnDangxuat.Name = "btnDangxuat";
             this.btnDangxuat.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnDangxuat.Size = new System.Drawing.Size(307, 50);
@@ -341,7 +341,7 @@ namespace QLHocBongMLV
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
             this.label1.Location = new System.Drawing.Point(401, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(594, 37);
+            this.label1.Size = new System.Drawing.Size(495, 30);
             this.label1.TabIndex = 1;
             this.label1.Text = "CHÀO MỪNG BẠN ĐẾN VỚI QUẢN TRỊ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -350,9 +350,9 @@ namespace QLHocBongMLV
             // 
             this.panelTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panelTitle.Controls.Add(this.label1);
-            this.panelTitle.Location = new System.Drawing.Point(313, 0);
+            this.panelTitle.Location = new System.Drawing.Point(313, -4);
             this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(1650, 69);
+            this.panelTitle.Size = new System.Drawing.Size(1408, 69);
             this.panelTitle.TabIndex = 2;
             // 
             // panelDestop
@@ -362,9 +362,9 @@ namespace QLHocBongMLV
             this.panelDestop.Controls.Add(this.label2);
             this.panelDestop.Controls.Add(this.pictureBox2);
             this.panelDestop.Enabled = false;
-            this.panelDestop.Location = new System.Drawing.Point(313, 74);
+            this.panelDestop.Location = new System.Drawing.Point(313, 70);
             this.panelDestop.Name = "panelDestop";
-            this.panelDestop.Size = new System.Drawing.Size(1800, 880);
+            this.panelDestop.Size = new System.Drawing.Size(1558, 880);
             this.panelDestop.TabIndex = 3;
             // 
             // label2
@@ -377,7 +377,7 @@ namespace QLHocBongMLV
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label2.Location = new System.Drawing.Point(681, 595);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(245, 57);
+            this.label2.Size = new System.Drawing.Size(198, 46);
             this.label2.TabIndex = 1;
             this.label2.Text = "MLV 2011";
             // 
@@ -389,7 +389,7 @@ namespace QLHocBongMLV
             this.pictureBox2.Image = global::QLHocBongMLV.Properties.Resources.LOGO_HB;
             this.pictureBox2.Location = new System.Drawing.Point(472, 134);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(610, 406);
+            this.pictureBox2.Size = new System.Drawing.Size(368, 406);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -399,7 +399,7 @@ namespace QLHocBongMLV
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1782, 853);
+            this.ClientSize = new System.Drawing.Size(1540, 845);
             this.Controls.Add(this.panelDestop);
             this.Controls.Add(this.panel1Menu);
             this.Controls.Add(this.panelTitle);
@@ -409,7 +409,6 @@ namespace QLHocBongMLV
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.ImeMode = System.Windows.Forms.ImeMode.On;
             this.Name = "panelMain";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Trang Quản Trị";
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.panel1Menu.ResumeLayout(false);

@@ -31,6 +31,10 @@ namespace QLHocBongMLV
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QlSinhVien));
             this.panelSinhVien = new System.Windows.Forms.Panel();
+            this.btnXuatFile = new System.Windows.Forms.Button();
+            this.txtTong = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dataGridViewSV = new System.Windows.Forms.DataGridView();
             this.labelMaSinhVien = new System.Windows.Forms.Label();
             this.btnThoatSV = new System.Windows.Forms.Button();
             this.btnXoaSV = new System.Windows.Forms.Button();
@@ -86,10 +90,6 @@ namespace QLHocBongMLV
             this.labelMaCum = new System.Windows.Forms.Label();
             this.txtMaSinhVien = new System.Windows.Forms.TextBox();
             this.labelMaSV = new System.Windows.Forms.Label();
-            this.dataGridViewSV = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtTong = new System.Windows.Forms.TextBox();
-            this.btnXuatFile = new System.Windows.Forms.Button();
             this.panelSinhVien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSV)).BeginInit();
             this.SuspendLayout();
@@ -161,6 +161,50 @@ namespace QLHocBongMLV
             this.panelSinhVien.Name = "panelSinhVien";
             this.panelSinhVien.Size = new System.Drawing.Size(1312, 890);
             this.panelSinhVien.TabIndex = 0;
+            // 
+            // btnXuatFile
+            // 
+            this.btnXuatFile.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnXuatFile.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXuatFile.ForeColor = System.Drawing.Color.Transparent;
+            this.btnXuatFile.Image = ((System.Drawing.Image)(resources.GetObject("btnXuatFile.Image")));
+            this.btnXuatFile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXuatFile.Location = new System.Drawing.Point(1018, 843);
+            this.btnXuatFile.Name = "btnXuatFile";
+            this.btnXuatFile.Size = new System.Drawing.Size(110, 35);
+            this.btnXuatFile.TabIndex = 58;
+            this.btnXuatFile.Text = "       Xuất File";
+            this.btnXuatFile.UseVisualStyleBackColor = false;
+            // 
+            // txtTong
+            // 
+            this.txtTong.Location = new System.Drawing.Point(883, 852);
+            this.txtTong.Multiline = true;
+            this.txtTong.Name = "txtTong";
+            this.txtTong.Size = new System.Drawing.Size(52, 26);
+            this.txtTong.TabIndex = 57;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(826, 852);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 20);
+            this.label1.TabIndex = 56;
+            this.label1.Text = "Tổng:";
+            // 
+            // dataGridViewSV
+            // 
+            this.dataGridViewSV.AllowDrop = true;
+            this.dataGridViewSV.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(95)))), ((int)(((byte)(153)))));
+            this.dataGridViewSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSV.Location = new System.Drawing.Point(55, 576);
+            this.dataGridViewSV.Name = "dataGridViewSV";
+            this.dataGridViewSV.RowHeadersWidth = 51;
+            this.dataGridViewSV.RowTemplate.Height = 24;
+            this.dataGridViewSV.Size = new System.Drawing.Size(1171, 258);
+            this.dataGridViewSV.TabIndex = 0;
             // 
             // labelMaSinhVien
             // 
@@ -764,53 +808,6 @@ namespace QLHocBongMLV
             this.labelMaSV.Name = "labelMaSV";
             this.labelMaSV.Size = new System.Drawing.Size(0, 19);
             this.labelMaSV.TabIndex = 0;
-            // 
-            // dataGridViewSV
-            // 
-            this.dataGridViewSV.AllowDrop = true;
-            this.dataGridViewSV.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewSV.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(95)))), ((int)(((byte)(153)))));
-            this.dataGridViewSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewSV.Location = new System.Drawing.Point(55, 576);
-            this.dataGridViewSV.Name = "dataGridViewSV";
-            this.dataGridViewSV.RowHeadersWidth = 51;
-            this.dataGridViewSV.RowTemplate.Height = 24;
-            this.dataGridViewSV.Size = new System.Drawing.Size(1171, 258);
-            this.dataGridViewSV.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(826, 852);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
-            this.label1.TabIndex = 56;
-            this.label1.Text = "Tổng:";
-            // 
-            // txtTong
-            // 
-            this.txtTong.Location = new System.Drawing.Point(883, 852);
-            this.txtTong.Multiline = true;
-            this.txtTong.Name = "txtTong";
-            this.txtTong.Size = new System.Drawing.Size(52, 26);
-            this.txtTong.TabIndex = 57;
-            // 
-            // btnXuatFile
-            // 
-            this.btnXuatFile.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btnXuatFile.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXuatFile.ForeColor = System.Drawing.Color.Transparent;
-            this.btnXuatFile.Image = ((System.Drawing.Image)(resources.GetObject("btnXuatFile.Image")));
-            this.btnXuatFile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXuatFile.Location = new System.Drawing.Point(1018, 843);
-            this.btnXuatFile.Name = "btnXuatFile";
-            this.btnXuatFile.Size = new System.Drawing.Size(110, 35);
-            this.btnXuatFile.TabIndex = 58;
-            this.btnXuatFile.Text = "       Xuất File";
-            this.btnXuatFile.UseVisualStyleBackColor = false;
             // 
             // QlSinhVien
             // 

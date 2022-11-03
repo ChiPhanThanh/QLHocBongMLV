@@ -425,7 +425,7 @@ namespace QLHocBongMLV
             this.HelpButton = true;
             this.Name = "panelMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Main";
+            this.Text = "MLV";
             this.UseWaitCursor = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.panel1Menu.ResumeLayout(false);

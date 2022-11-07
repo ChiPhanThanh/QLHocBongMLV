@@ -31,6 +31,7 @@ namespace QLHocBongMLV
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(panelMain));
             this.panel1Menu = new System.Windows.Forms.Panel();
+            this.btnDangxuat = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.btnTaiChinh = new System.Windows.Forms.Button();
             this.btnDiem = new System.Windows.Forms.Button();
@@ -47,7 +48,6 @@ namespace QLHocBongMLV
             this.label1 = new System.Windows.Forms.Label();
             this.panelTitle = new System.Windows.Forms.Panel();
             this.panelDestop = new System.Windows.Forms.Panel();
-            this.btnDangxuat = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1Menu.SuspendLayout();
             this.panelLogo.SuspendLayout();
@@ -79,6 +79,26 @@ namespace QLHocBongMLV
             this.panel1Menu.Name = "panel1Menu";
             this.panel1Menu.Size = new System.Drawing.Size(307, 793);
             this.panel1Menu.TabIndex = 0;
+            // 
+            // btnDangxuat
+            // 
+            this.btnDangxuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(67)))), ((int)(((byte)(102)))));
+            this.btnDangxuat.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnDangxuat.FlatAppearance.BorderSize = 0;
+            this.btnDangxuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDangxuat.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangxuat.ForeColor = System.Drawing.Color.White;
+            this.btnDangxuat.Image = global::QLHocBongMLV.Properties.Resources.dangxuat_16;
+            this.btnDangxuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDangxuat.Location = new System.Drawing.Point(0, 743);
+            this.btnDangxuat.Name = "btnDangxuat";
+            this.btnDangxuat.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnDangxuat.Size = new System.Drawing.Size(307, 50);
+            this.btnDangxuat.TabIndex = 13;
+            this.btnDangxuat.Text = "  Đăng xuất";
+            this.btnDangxuat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDangxuat.UseVisualStyleBackColor = false;
+            this.btnDangxuat.Click += new System.EventHandler(this.btnDangxuat_Click);
             // 
             // button11
             // 
@@ -338,26 +358,6 @@ namespace QLHocBongMLV
             this.panelDestop.Name = "panelDestop";
             this.panelDestop.Size = new System.Drawing.Size(1020, 865);
             this.panelDestop.TabIndex = 3;
-            // 
-            // btnDangxuat
-            // 
-            this.btnDangxuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(67)))), ((int)(((byte)(102)))));
-            this.btnDangxuat.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnDangxuat.FlatAppearance.BorderSize = 0;
-            this.btnDangxuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDangxuat.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangxuat.ForeColor = System.Drawing.Color.White;
-            this.btnDangxuat.Image = global::QLHocBongMLV.Properties.Resources.dangxuat_16;
-            this.btnDangxuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDangxuat.Location = new System.Drawing.Point(0, 743);
-            this.btnDangxuat.Name = "btnDangxuat";
-            this.btnDangxuat.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnDangxuat.Size = new System.Drawing.Size(307, 50);
-            this.btnDangxuat.TabIndex = 13;
-            this.btnDangxuat.Text = "  Đăng xuất";
-            this.btnDangxuat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDangxuat.UseVisualStyleBackColor = false;
-            this.btnDangxuat.Click += new System.EventHandler(this.btnDangxuat_Click);
             // 
             // label2
             // 

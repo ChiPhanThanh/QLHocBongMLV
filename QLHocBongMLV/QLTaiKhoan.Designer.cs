@@ -209,6 +209,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1294, 804);
             this.Controls.Add(this.dataGridViewTK);
             this.Controls.Add(this.btnThoatTK);
@@ -225,6 +226,7 @@
             this.Controls.Add(this.labelTrangThaiTK);
             this.Controls.Add(this.txtTenTaiKhoan);
             this.Name = "QLTaiKhoan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Quản Lý Tài Khoản";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTK)).EndInit();
             this.ResumeLayout(false);

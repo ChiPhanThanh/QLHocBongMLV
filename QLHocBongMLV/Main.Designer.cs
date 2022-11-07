@@ -29,6 +29,7 @@ namespace QLHocBongMLV
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(panelMain));
             this.panel1Menu = new System.Windows.Forms.Panel();
             this.btnDangxuat = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -48,7 +49,6 @@ namespace QLHocBongMLV
             this.panelTitle = new System.Windows.Forms.Panel();
             this.panelDestop = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1Menu.SuspendLayout();
             this.panelLogo.SuspendLayout();
@@ -79,7 +79,7 @@ namespace QLHocBongMLV
             this.panel1Menu.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1Menu.Location = new System.Drawing.Point(0, 0);
             this.panel1Menu.Name = "panel1Menu";
-            this.panel1Menu.Size = new System.Drawing.Size(307, 833);
+            this.panel1Menu.Size = new System.Drawing.Size(307, 793);
             this.panel1Menu.TabIndex = 0;
             this.panel1Menu.UseWaitCursor = true;
             this.panel1Menu.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1Menu_Paint);
@@ -94,7 +94,7 @@ namespace QLHocBongMLV
             this.btnDangxuat.ForeColor = System.Drawing.Color.White;
             this.btnDangxuat.Image = global::QLHocBongMLV.Properties.Resources.dangxuat_16;
             this.btnDangxuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDangxuat.Location = new System.Drawing.Point(0, 783);
+            this.btnDangxuat.Location = new System.Drawing.Point(0, 743);
             this.btnDangxuat.Name = "btnDangxuat";
             this.btnDangxuat.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnDangxuat.Size = new System.Drawing.Size(307, 50);
@@ -103,6 +103,7 @@ namespace QLHocBongMLV
             this.btnDangxuat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDangxuat.UseVisualStyleBackColor = false;
             this.btnDangxuat.UseWaitCursor = true;
+            this.btnDangxuat.Click += new System.EventHandler(this.btnDangxuat_Click);
             // 
             // button11
             // 
@@ -113,7 +114,7 @@ namespace QLHocBongMLV
             this.button11.ForeColor = System.Drawing.Color.White;
             this.button11.Image = global::QLHocBongMLV.Properties.Resources.folder_32;
             this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.Location = new System.Drawing.Point(0, 683);
+            this.button11.Location = new System.Drawing.Point(0, 583);
             this.button11.Name = "button11";
             this.button11.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.button11.Size = new System.Drawing.Size(307, 50);
@@ -133,10 +134,10 @@ namespace QLHocBongMLV
             this.btnTaiChinh.ForeColor = System.Drawing.Color.White;
             this.btnTaiChinh.Image = global::QLHocBongMLV.Properties.Resources.folder_32;
             this.btnTaiChinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTaiChinh.Location = new System.Drawing.Point(0, 623);
+            this.btnTaiChinh.Location = new System.Drawing.Point(0, 533);
             this.btnTaiChinh.Name = "btnTaiChinh";
             this.btnTaiChinh.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnTaiChinh.Size = new System.Drawing.Size(307, 60);
+            this.btnTaiChinh.Size = new System.Drawing.Size(307, 50);
             this.btnTaiChinh.TabIndex = 11;
             this.btnTaiChinh.Text = "  Quản lý Tài Chính";
             this.btnTaiChinh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -153,10 +154,10 @@ namespace QLHocBongMLV
             this.btnDiem.ForeColor = System.Drawing.Color.White;
             this.btnDiem.Image = global::QLHocBongMLV.Properties.Resources.folder_32;
             this.btnDiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDiem.Location = new System.Drawing.Point(0, 563);
+            this.btnDiem.Location = new System.Drawing.Point(0, 483);
             this.btnDiem.Name = "btnDiem";
             this.btnDiem.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnDiem.Size = new System.Drawing.Size(307, 60);
+            this.btnDiem.Size = new System.Drawing.Size(307, 50);
             this.btnDiem.TabIndex = 9;
             this.btnDiem.Text = "  Quản lý Điểm";
             this.btnDiem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -173,10 +174,10 @@ namespace QLHocBongMLV
             this.btnTaiKhoan.ForeColor = System.Drawing.Color.White;
             this.btnTaiKhoan.Image = global::QLHocBongMLV.Properties.Resources.folder_32;
             this.btnTaiKhoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTaiKhoan.Location = new System.Drawing.Point(0, 503);
+            this.btnTaiKhoan.Location = new System.Drawing.Point(0, 433);
             this.btnTaiKhoan.Name = "btnTaiKhoan";
             this.btnTaiKhoan.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnTaiKhoan.Size = new System.Drawing.Size(307, 60);
+            this.btnTaiKhoan.Size = new System.Drawing.Size(307, 50);
             this.btnTaiKhoan.TabIndex = 8;
             this.btnTaiKhoan.Text = "  Quản lý Tài Khoản";
             this.btnTaiKhoan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -193,10 +194,10 @@ namespace QLHocBongMLV
             this.btnCV.ForeColor = System.Drawing.Color.White;
             this.btnCV.Image = global::QLHocBongMLV.Properties.Resources.folder_32;
             this.btnCV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCV.Location = new System.Drawing.Point(0, 443);
+            this.btnCV.Location = new System.Drawing.Point(0, 383);
             this.btnCV.Name = "btnCV";
             this.btnCV.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnCV.Size = new System.Drawing.Size(307, 60);
+            this.btnCV.Size = new System.Drawing.Size(307, 50);
             this.btnCV.TabIndex = 7;
             this.btnCV.Text = "  Quản lý Chức Vụ";
             this.btnCV.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -213,10 +214,10 @@ namespace QLHocBongMLV
             this.btnCum.ForeColor = System.Drawing.Color.White;
             this.btnCum.Image = global::QLHocBongMLV.Properties.Resources.folder_32;
             this.btnCum.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCum.Location = new System.Drawing.Point(0, 383);
+            this.btnCum.Location = new System.Drawing.Point(0, 333);
             this.btnCum.Name = "btnCum";
             this.btnCum.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnCum.Size = new System.Drawing.Size(307, 60);
+            this.btnCum.Size = new System.Drawing.Size(307, 50);
             this.btnCum.TabIndex = 6;
             this.btnCum.Text = "  Quản lý Cụm";
             this.btnCum.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -233,10 +234,10 @@ namespace QLHocBongMLV
             this.btnDH.ForeColor = System.Drawing.Color.White;
             this.btnDH.Image = global::QLHocBongMLV.Properties.Resources.folder_32;
             this.btnDH.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDH.Location = new System.Drawing.Point(0, 323);
+            this.btnDH.Location = new System.Drawing.Point(0, 283);
             this.btnDH.Name = "btnDH";
             this.btnDH.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnDH.Size = new System.Drawing.Size(307, 60);
+            this.btnDH.Size = new System.Drawing.Size(307, 50);
             this.btnDH.TabIndex = 5;
             this.btnDH.Text = "  Quản lý Du Học";
             this.btnDH.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -253,10 +254,10 @@ namespace QLHocBongMLV
             this.tbnTS.ForeColor = System.Drawing.Color.White;
             this.tbnTS.Image = global::QLHocBongMLV.Properties.Resources.folder_32;
             this.tbnTS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.tbnTS.Location = new System.Drawing.Point(0, 263);
+            this.tbnTS.Location = new System.Drawing.Point(0, 233);
             this.tbnTS.Name = "tbnTS";
             this.tbnTS.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.tbnTS.Size = new System.Drawing.Size(307, 60);
+            this.tbnTS.Size = new System.Drawing.Size(307, 50);
             this.tbnTS.TabIndex = 4;
             this.tbnTS.Text = "  Quản lý Tu Sĩ";
             this.tbnTS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -273,10 +274,10 @@ namespace QLHocBongMLV
             this.btnAN.ForeColor = System.Drawing.Color.White;
             this.btnAN.Image = global::QLHocBongMLV.Properties.Resources.folder_32;
             this.btnAN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAN.Location = new System.Drawing.Point(0, 203);
+            this.btnAN.Location = new System.Drawing.Point(0, 183);
             this.btnAN.Name = "btnAN";
             this.btnAN.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnAN.Size = new System.Drawing.Size(307, 60);
+            this.btnAN.Size = new System.Drawing.Size(307, 50);
             this.btnAN.TabIndex = 3;
             this.btnAN.Text = "  Quản lý Ân Nhân";
             this.btnAN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -293,10 +294,10 @@ namespace QLHocBongMLV
             this.btnHS.ForeColor = System.Drawing.Color.White;
             this.btnHS.Image = global::QLHocBongMLV.Properties.Resources.folder_32;
             this.btnHS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHS.Location = new System.Drawing.Point(0, 143);
+            this.btnHS.Location = new System.Drawing.Point(0, 133);
             this.btnHS.Name = "btnHS";
             this.btnHS.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnHS.Size = new System.Drawing.Size(307, 60);
+            this.btnHS.Size = new System.Drawing.Size(307, 50);
             this.btnHS.TabIndex = 2;
             this.btnHS.Text = "  Quản lý Học Sinh";
             this.btnHS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -311,12 +312,12 @@ namespace QLHocBongMLV
             this.btnQLSV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQLSV.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLSV.ForeColor = System.Drawing.Color.White;
-            this.btnQLSV.Image = global::QLHocBongMLV.Properties.Resources.folder_32;
+            this.btnQLSV.Image = ((System.Drawing.Image)(resources.GetObject("btnQLSV.Image")));
             this.btnQLSV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnQLSV.Location = new System.Drawing.Point(0, 83);
             this.btnQLSV.Name = "btnQLSV";
             this.btnQLSV.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnQLSV.Size = new System.Drawing.Size(307, 60);
+            this.btnQLSV.Size = new System.Drawing.Size(307, 50);
             this.btnQLSV.TabIndex = 1;
             this.btnQLSV.Text = "  Quản lý Sinh Viên";
             this.btnQLSV.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -337,9 +338,9 @@ namespace QLHocBongMLV
             // pictureBox1
             // 
             this.pictureBox1.Image = global::QLHocBongMLV.Properties.Resources.home_16;
-            this.pictureBox1.Location = new System.Drawing.Point(94, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(102, 26);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(69, 59);
+            this.pictureBox1.Size = new System.Drawing.Size(48, 37);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -347,14 +348,12 @@ namespace QLHocBongMLV
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 19.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
-            this.label1.Location = new System.Drawing.Point(401, 19);
-            this.label1.Location = new System.Drawing.Point(502, 19);
+            this.label1.Location = new System.Drawing.Point(251, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(594, 37);
+            this.label1.Size = new System.Drawing.Size(528, 33);
             this.label1.TabIndex = 1;
             this.label1.Text = "CHÀO MỪNG BẠN ĐẾN VỚI QUẢN TRỊ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -364,10 +363,9 @@ namespace QLHocBongMLV
             // 
             this.panelTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panelTitle.Controls.Add(this.label1);
-            this.panelTitle.Location = new System.Drawing.Point(307, 0);
+            this.panelTitle.Location = new System.Drawing.Point(313, 4);
             this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(1415, 71);
-            this.panelTitle.Size = new System.Drawing.Size(1617, 71);
+            this.panelTitle.Size = new System.Drawing.Size(1200, 49);
             this.panelTitle.TabIndex = 2;
             this.panelTitle.UseWaitCursor = true;
             // 
@@ -378,71 +376,57 @@ namespace QLHocBongMLV
             this.panelDestop.Controls.Add(this.label2);
             this.panelDestop.Controls.Add(this.pictureBox2);
             this.panelDestop.Enabled = false;
-            this.panelDestop.Location = new System.Drawing.Point(307, 59);
+            this.panelDestop.Location = new System.Drawing.Point(313, 59);
             this.panelDestop.Name = "panelDestop";
-            this.panelDestop.Size = new System.Drawing.Size(1413, 774);
+            this.panelDestop.Size = new System.Drawing.Size(1350, 865);
             this.panelDestop.TabIndex = 3;
             this.panelDestop.UseWaitCursor = true;
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(583, 662);
+            this.label2.Location = new System.Drawing.Point(436, 489);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(245, 57);
             this.label2.TabIndex = 1;
             this.label2.Text = "MLV 2011";
             this.label2.UseWaitCursor = true;
             // 
-            this.panelDestop.Size = new System.Drawing.Size(1615, 774);
-            this.panelDestop.TabIndex = 3;
-            this.panelDestop.UseWaitCursor = true;
-            // 
-
             // pictureBox2
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.Image = global::QLHocBongMLV.Properties.Resources.LOGO_HB;
-            this.pictureBox2.Location = new System.Drawing.Point(421, 149);
-            this.pictureBox2.Location = new System.Drawing.Point(522, 149);
+            this.pictureBox2.Location = new System.Drawing.Point(410, 124);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(520, 477);
+            this.pictureBox2.Size = new System.Drawing.Size(324, 377);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.UseWaitCursor = true;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(650, 663);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(246, 58);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "MLV 2011";
-            // 
             // panelMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1722, 833);
+            this.ClientSize = new System.Drawing.Size(1332, 793);
             this.Controls.Add(this.panelDestop);
-            this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panel1Menu);
             this.Controls.Add(this.panelTitle);
-            this.Cursor = System.Windows.Forms.Cursors.Default;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.HelpButton = true;
-
-            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Name = "panelMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Trang Quản Trị";
+            this.Text = "MLV";
+            this.UseWaitCursor = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.panel1Menu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);

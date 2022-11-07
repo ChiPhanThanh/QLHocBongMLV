@@ -74,6 +74,12 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainChinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainChinh.Designer.cs">
+      <DependentUpon>MainChinh.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modify.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ProgressBarInterface.cs">
@@ -156,6 +162,9 @@
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainChinh.resx">
+      <DependentUpon>MainChinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProgressBarInterface.resx">
       <DependentUpon>ProgressBarInterface.cs</DependentUpon>

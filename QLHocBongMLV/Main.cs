@@ -18,7 +18,10 @@ namespace QLHocBongMLV
         {
             InitializeComponent();
         }
+        private void panelMain_Load(object sender, EventArgs e)
+        {
 
+        }
 
         //Open childForm trong penalMain
         private void OpenChildForm( Form childForm)
@@ -32,18 +35,17 @@ namespace QLHocBongMLV
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-            panelDestop.Controls.Add(childForm);
-            panelDestop.Tag = childForm;
+            this.panelDestop.Controls.Add(childForm);
+            this.panelDestop.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
             label1.Text = childForm.Text;
 
         }
 
-
         private void btnQLSV_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new QlSinhVien());
+           // OpenChildForm(new QlSinhVien());
         }
 
         private void btnHS_Click(object sender, EventArgs e)
@@ -53,53 +55,50 @@ namespace QLHocBongMLV
 
         private void btnAN_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new QLAnNhan());
+           // OpenChildForm(new QLAnNhan());
         }
 
         private void tbnTS_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new QLTuSi());
+           // OpenChildForm(new QLTuSi());
         }
 
         private void btnTaiKhoan_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new QLTaiKhoan());
+            //OpenChildForm(new QLTaiKhoan());
         }
 
         private void btnDH_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new QLDuHoc());
+           // OpenChildForm(new QLDuHoc());
         }
 
         private void btnCum_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new QLCum());
+            //OpenChildForm(new QLCum());
         }
 
         private void btnCV_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new QLChuVu());
+            //OpenChildForm(new QLChuVu());
         }
 
         private void btnDiem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Đang cập nhật", "Thông bao", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+            //MessageBox.Show("Đang cập nhật", "Thông bao", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
         }
 
         private void btnTaiChinh_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Đang cập nhật", "Thông bao", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+           // MessageBox.Show("Đang cập nhật", "Thông bao", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Đang cập nhật", "Thông bao", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+           // MessageBox.Show("Đang cập nhật", "Thông bao", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
         }
 
-        private void panel1Menu_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+   
 
         private void btnDangxuat_Click(object sender, EventArgs e)
         {
@@ -114,6 +113,11 @@ namespace QLHocBongMLV
             }
         }
 
-     
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new QLCum());
+        }
+
+       
     }
 }

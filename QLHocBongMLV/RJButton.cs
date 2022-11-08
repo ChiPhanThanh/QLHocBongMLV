@@ -3,23 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.ComponentModel;
 
-namespace CustomButton
+namespace QLHocBongMLV
 {
-    public class VBButton : Button
+     class RJButton:Button
     {
         //Fields
         private int borderSize = 0;
-        private int borderRadius = 20;
+        private int borderRadius = 0;
         private Color borderColor = Color.PaleVioletRed;
 
         //Properties
-        [Category("Custom Props")]
+        [Category("RJ Code Advance")]
         public int BorderSize
         {
             get { return borderSize; }
@@ -30,7 +29,7 @@ namespace CustomButton
             }
         }
 
-        [Category("Custom Props")]
+        [Category("RJ Code Advance")]
         public int BorderRadius
         {
             get { return borderRadius; }
@@ -41,7 +40,7 @@ namespace CustomButton
             }
         }
 
-        [Category("Custom Props")]
+        [Category("RJ Code Advance")]
         public Color BorderColor
         {
             get { return borderColor; }
@@ -51,14 +50,15 @@ namespace CustomButton
                 this.Invalidate();
             }
         }
-        [Category("Custom Props")]
+
+        [Category("RJ Code Advance")]
         public Color BackgroundColor
         {
             get { return this.BackColor; }
             set { this.BackColor = value; }
         }
 
-        [Category("Custom Props")]
+        [Category("RJ Code Advance")]
         public Color TextColor
         {
             get { return this.ForeColor; }
@@ -66,7 +66,7 @@ namespace CustomButton
         }
 
         //Constructor
-        public VBButton()
+        public RJButton()
         {
             this.FlatStyle = FlatStyle.Flat;
             this.FlatAppearance.BorderSize = 0;
@@ -77,7 +77,7 @@ namespace CustomButton
         }
 
         //Methods
-        private GraphicsPath GetFigurePath(Rectangle rect, float radius)
+        private GraphicsPath GetFigurePath(Rectangle rect, int radius)
         {
             GraphicsPath path = new GraphicsPath();
             float curveSize = radius * 2F;
@@ -94,7 +94,7 @@ namespace CustomButton
         protected override void OnPaint(PaintEventArgs pevent)
         {
             base.OnPaint(pevent);
-            pevent.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+
 
             Rectangle rectSurface = this.ClientRectangle;
             Rectangle rectBorder = Rectangle.Inflate(rectSurface, -borderSize, -borderSize);
@@ -109,6 +109,7 @@ namespace CustomButton
                 using (Pen penSurface = new Pen(this.Parent.BackColor, smoothSize))
                 using (Pen penBorder = new Pen(borderColor, borderSize))
                 {
+                    pevent.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
                     //Button surface
                     this.Region = new Region(pathSurface);
                     //Draw surface border for HD result
@@ -122,6 +123,7 @@ namespace CustomButton
             }
             else //Normal button
             {
+                pevent.Graphics.SmoothingMode = SmoothingMode.None;
                 //Button surface
                 this.Region = new Region(rectSurface);
                 //Button border
@@ -145,11 +147,11 @@ namespace CustomButton
         {
             this.Invalidate();
         }
-
         private void Button_Resize(object sender, EventArgs e)
         {
             if (borderRadius > this.Height)
                 borderRadius = this.Height;
         }
     }
+
 }

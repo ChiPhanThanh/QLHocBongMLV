@@ -61,7 +61,7 @@ namespace QLHocBongMLV
                     // MessageBox.Show(" Đăng nhập thành công", " Thông báo..", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
                     // khoi tạo dối tượng panelMain
-                    panelMain main = new panelMain();
+                    MainChinh main = new MainChinh() ;
                     main.ShowDialog();
                     
                 }

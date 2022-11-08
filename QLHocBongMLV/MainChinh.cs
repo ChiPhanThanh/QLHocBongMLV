@@ -97,7 +97,10 @@ namespace QLHocBongMLV
         {
             MessageBox.Show("Đang cập nhật", "Thông bao", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
         }
-
+        private void btnTaiKhoan_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new QLTaiKhoan());
+        }
         private void btnDangxuat_Click(object sender, EventArgs e)
         {
             DialogResult dr = MessageBox.Show(" Bạn có muốn đăng xuất không", "Thông báo...", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
@@ -110,5 +113,7 @@ namespace QLHocBongMLV
                 return;
             }
         }
+
+      
     }
 }

@@ -80,7 +80,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(244, 86);
+            this.panel2.Size = new System.Drawing.Size(244, 61);
             this.panel2.TabIndex = 0;
             // 
             // kkk
@@ -102,7 +102,7 @@
             this.btnQLSV.ForeColor = System.Drawing.Color.Transparent;
             this.btnQLSV.Image = ((System.Drawing.Image)(resources.GetObject("btnQLSV.Image")));
             this.btnQLSV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQLSV.Location = new System.Drawing.Point(3, 95);
+            this.btnQLSV.Location = new System.Drawing.Point(3, 70);
             this.btnQLSV.Name = "btnQLSV";
             this.btnQLSV.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnQLSV.Size = new System.Drawing.Size(307, 50);
@@ -120,7 +120,7 @@
             this.btnHS.ForeColor = System.Drawing.Color.White;
             this.btnHS.Image = global::QLHocBongMLV.Properties.Resources.folder_32;
             this.btnHS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHS.Location = new System.Drawing.Point(3, 151);
+            this.btnHS.Location = new System.Drawing.Point(3, 126);
             this.btnHS.Name = "btnHS";
             this.btnHS.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnHS.Size = new System.Drawing.Size(307, 50);
@@ -138,7 +138,7 @@
             this.btnAN.ForeColor = System.Drawing.Color.White;
             this.btnAN.Image = global::QLHocBongMLV.Properties.Resources.folder_32;
             this.btnAN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAN.Location = new System.Drawing.Point(3, 207);
+            this.btnAN.Location = new System.Drawing.Point(3, 182);
             this.btnAN.Name = "btnAN";
             this.btnAN.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnAN.Size = new System.Drawing.Size(307, 50);
@@ -157,7 +157,7 @@
             this.tbnTS.ForeColor = System.Drawing.Color.White;
             this.tbnTS.Image = global::QLHocBongMLV.Properties.Resources.folder_32;
             this.tbnTS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.tbnTS.Location = new System.Drawing.Point(3, 263);
+            this.tbnTS.Location = new System.Drawing.Point(3, 238);
             this.tbnTS.Name = "tbnTS";
             this.tbnTS.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.tbnTS.Size = new System.Drawing.Size(307, 50);
@@ -176,7 +176,7 @@
             this.btnDH.ForeColor = System.Drawing.Color.White;
             this.btnDH.Image = global::QLHocBongMLV.Properties.Resources.folder_32;
             this.btnDH.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDH.Location = new System.Drawing.Point(3, 319);
+            this.btnDH.Location = new System.Drawing.Point(3, 294);
             this.btnDH.Name = "btnDH";
             this.btnDH.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnDH.Size = new System.Drawing.Size(307, 50);
@@ -195,7 +195,7 @@
             this.btnCum.ForeColor = System.Drawing.Color.White;
             this.btnCum.Image = global::QLHocBongMLV.Properties.Resources.folder_32;
             this.btnCum.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCum.Location = new System.Drawing.Point(3, 375);
+            this.btnCum.Location = new System.Drawing.Point(3, 350);
             this.btnCum.Name = "btnCum";
             this.btnCum.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnCum.Size = new System.Drawing.Size(307, 50);
@@ -214,7 +214,7 @@
             this.btnCV.ForeColor = System.Drawing.Color.White;
             this.btnCV.Image = global::QLHocBongMLV.Properties.Resources.folder_32;
             this.btnCV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCV.Location = new System.Drawing.Point(3, 431);
+            this.btnCV.Location = new System.Drawing.Point(3, 406);
             this.btnCV.Name = "btnCV";
             this.btnCV.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnCV.Size = new System.Drawing.Size(307, 50);
@@ -233,7 +233,7 @@
             this.btnDiem.ForeColor = System.Drawing.Color.White;
             this.btnDiem.Image = global::QLHocBongMLV.Properties.Resources.folder_32;
             this.btnDiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDiem.Location = new System.Drawing.Point(3, 487);
+            this.btnDiem.Location = new System.Drawing.Point(3, 462);
             this.btnDiem.Name = "btnDiem";
             this.btnDiem.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnDiem.Size = new System.Drawing.Size(307, 50);
@@ -252,7 +252,7 @@
             this.btnTaiChinh.ForeColor = System.Drawing.Color.White;
             this.btnTaiChinh.Image = global::QLHocBongMLV.Properties.Resources.folder_32;
             this.btnTaiChinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTaiChinh.Location = new System.Drawing.Point(3, 543);
+            this.btnTaiChinh.Location = new System.Drawing.Point(3, 518);
             this.btnTaiChinh.Name = "btnTaiChinh";
             this.btnTaiChinh.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnTaiChinh.Size = new System.Drawing.Size(307, 50);
@@ -271,7 +271,7 @@
             this.button11.ForeColor = System.Drawing.Color.White;
             this.button11.Image = global::QLHocBongMLV.Properties.Resources.folder_32;
             this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.Location = new System.Drawing.Point(3, 599);
+            this.button11.Location = new System.Drawing.Point(3, 574);
             this.button11.Name = "button11";
             this.button11.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.button11.Size = new System.Drawing.Size(307, 50);
@@ -290,7 +290,7 @@
             this.btnTaiKhoan.ForeColor = System.Drawing.Color.White;
             this.btnTaiKhoan.Image = global::QLHocBongMLV.Properties.Resources.folder_32;
             this.btnTaiKhoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTaiKhoan.Location = new System.Drawing.Point(3, 655);
+            this.btnTaiKhoan.Location = new System.Drawing.Point(3, 630);
             this.btnTaiKhoan.Name = "btnTaiKhoan";
             this.btnTaiKhoan.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnTaiKhoan.Size = new System.Drawing.Size(307, 50);
@@ -309,7 +309,7 @@
             this.btnDangxuat.ForeColor = System.Drawing.Color.White;
             this.btnDangxuat.Image = global::QLHocBongMLV.Properties.Resources.dangxuat_16;
             this.btnDangxuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDangxuat.Location = new System.Drawing.Point(3, 711);
+            this.btnDangxuat.Location = new System.Drawing.Point(3, 686);
             this.btnDangxuat.Name = "btnDangxuat";
             this.btnDangxuat.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnDangxuat.Size = new System.Drawing.Size(307, 50);
@@ -324,7 +324,7 @@
             this.panel1.AutoScroll = true;
             this.panel1.Location = new System.Drawing.Point(314, 55);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1254, 785);
+            this.panel1.Size = new System.Drawing.Size(1346, 785);
             this.panel1.TabIndex = 1;
             // 
             // panelTitle
@@ -332,7 +332,7 @@
             this.panelTitle.Controls.Add(this.label1);
             this.panelTitle.Location = new System.Drawing.Point(314, 0);
             this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(1254, 49);
+            this.panelTitle.Size = new System.Drawing.Size(1346, 49);
             this.panelTitle.TabIndex = 3;
             // 
             // label1
@@ -341,7 +341,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
-            this.label1.Location = new System.Drawing.Point(327, 9);
+            this.label1.Location = new System.Drawing.Point(373, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(528, 33);
             this.label1.TabIndex = 1;
@@ -354,7 +354,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1567, 840);
+            this.ClientSize = new System.Drawing.Size(1656, 840);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flowLayoutPanel1);

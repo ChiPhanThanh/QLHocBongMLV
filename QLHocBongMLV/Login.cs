@@ -23,6 +23,7 @@ namespace QLHocBongMLV
         private void linkQuenMK_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
+            //this.Close();
             ResetPassWord resetPass = new ResetPassWord();
             resetPass.ShowDialog();
         }
@@ -30,6 +31,7 @@ namespace QLHocBongMLV
         private void linkDangKi_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
+            //this.Close();
             Sign_in sign_In = new Sign_in();
             sign_In.ShowDialog();
             
@@ -59,8 +61,7 @@ namespace QLHocBongMLV
                     // MessageBox.Show(" Đăng nhập thành công", " Thông báo..", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
                     // khoi tạo dối tượng panelMain
-                    MainChinh main = new MainChinh();
-                    panelMain main = new panelMain(); 
+                    panelMain main = new panelMain();
                     main.ShowDialog();
                     
                 }

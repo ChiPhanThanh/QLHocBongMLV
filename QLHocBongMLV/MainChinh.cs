@@ -40,6 +40,7 @@ namespace QLHocBongMLV
             this.panel1.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
+            label1.Text = childForm.Text;
 
         }
 
@@ -48,14 +49,66 @@ namespace QLHocBongMLV
             OpenChildForm(new QlSinhVien());
         }
 
-        private void button11_Click(object sender, EventArgs e)
+        private void btnHS_Click(object sender, EventArgs e)
         {
-            
+            OpenChildForm(new QLHocSinh());
         }
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void btnAN_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new QLAnNhan());
 
+        }
+
+        private void tbnTS_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new QLTuSi());
+
+        }
+
+        private void btnDH_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new QLDuHoc());
+        }
+
+        private void btnCum_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new QLCum());
+
+        }
+
+        private void btnCV_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new QLChuVu());
+
+        }
+
+        private void btnDiem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Đang cập nhật", "Thông bao", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+        }
+
+        private void btnTaiChinh_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Đang cập nhật", "Thông bao", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Đang cập nhật", "Thông bao", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+        }
+
+        private void btnDangxuat_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show(" Bạn có muốn đăng xuất không", "Thông báo...", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (dr == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                return;
+            }
         }
     }
 }

@@ -31,9 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainChinh));
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.kkk = new System.Windows.Forms.Label();
             this.btnQLSV = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btnHS = new System.Windows.Forms.Button();
             this.btnAN = new System.Windows.Forms.Button();
             this.tbnTS = new System.Windows.Forms.Button();
@@ -45,8 +44,9 @@
             this.button11 = new System.Windows.Forms.Button();
             this.btnTaiKhoan = new System.Windows.Forms.Button();
             this.btnDangxuat = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panelTitle = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelTitle.SuspendLayout();
@@ -73,25 +73,24 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(314, 840);
             this.flowLayoutPanel1.TabIndex = 0;
-            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.kkk);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(244, 86);
             this.panel2.TabIndex = 0;
             // 
-            // label1
+            // kkk
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(76, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.kkk.AutoSize = true;
+            this.kkk.Location = new System.Drawing.Point(76, 37);
+            this.kkk.Name = "kkk";
+            this.kkk.Size = new System.Drawing.Size(44, 16);
+            this.kkk.TabIndex = 0;
+            this.kkk.Text = "label1";
             // 
             // btnQLSV
             // 
@@ -112,14 +111,6 @@
             this.btnQLSV.UseVisualStyleBackColor = false;
             this.btnQLSV.Click += new System.EventHandler(this.btnQLSV_Click);
             // 
-            // panel1
-            // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(314, 42);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1018, 798);
-            this.panel1.TabIndex = 1;
-            // 
             // btnHS
             // 
             this.btnHS.Dock = System.Windows.Forms.DockStyle.Top;
@@ -136,6 +127,7 @@
             this.btnHS.TabIndex = 3;
             this.btnHS.Text = "  Quản lý Học Sinh";
             this.btnHS.UseVisualStyleBackColor = false;
+            this.btnHS.Click += new System.EventHandler(this.btnHS_Click);
             // 
             // btnAN
             // 
@@ -154,6 +146,7 @@
             this.btnAN.Text = "  Quản lý Ân Nhân";
             this.btnAN.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAN.UseVisualStyleBackColor = false;
+            this.btnAN.Click += new System.EventHandler(this.btnAN_Click);
             // 
             // tbnTS
             // 
@@ -172,6 +165,7 @@
             this.tbnTS.Text = "  Quản lý Tu Sĩ";
             this.tbnTS.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.tbnTS.UseVisualStyleBackColor = false;
+            this.tbnTS.Click += new System.EventHandler(this.tbnTS_Click);
             // 
             // btnDH
             // 
@@ -190,6 +184,7 @@
             this.btnDH.Text = "  Quản lý Du Học";
             this.btnDH.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDH.UseVisualStyleBackColor = false;
+            this.btnDH.Click += new System.EventHandler(this.btnDH_Click);
             // 
             // btnCum
             // 
@@ -208,6 +203,7 @@
             this.btnCum.Text = "  Quản lý Cụm";
             this.btnCum.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCum.UseVisualStyleBackColor = false;
+            this.btnCum.Click += new System.EventHandler(this.btnCum_Click);
             // 
             // btnCV
             // 
@@ -226,6 +222,7 @@
             this.btnCV.Text = "  Quản lý Chức Vụ";
             this.btnCV.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCV.UseVisualStyleBackColor = false;
+            this.btnCV.Click += new System.EventHandler(this.btnCV_Click);
             // 
             // btnDiem
             // 
@@ -244,6 +241,7 @@
             this.btnDiem.Text = "  Quản lý Điểm";
             this.btnDiem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDiem.UseVisualStyleBackColor = false;
+            this.btnDiem.Click += new System.EventHandler(this.btnDiem_Click);
             // 
             // btnTaiChinh
             // 
@@ -262,6 +260,7 @@
             this.btnTaiChinh.Text = "  Quản lý Tài Chính";
             this.btnTaiChinh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTaiChinh.UseVisualStyleBackColor = false;
+            this.btnTaiChinh.Click += new System.EventHandler(this.btnTaiChinh_Click);
             // 
             // button11
             // 
@@ -280,6 +279,7 @@
             this.button11.Text = "  Quản lý Cựu Viên";
             this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // btnTaiKhoan
             // 
@@ -317,40 +317,48 @@
             this.btnDangxuat.Text = "  Đăng xuất";
             this.btnDangxuat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDangxuat.UseVisualStyleBackColor = false;
+            this.btnDangxuat.Click += new System.EventHandler(this.btnDangxuat_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(314, 42);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1137, 798);
+            this.panel1.TabIndex = 1;
             // 
             // panelTitle
             // 
-            this.panelTitle.Controls.Add(this.label2);
+            this.panelTitle.Controls.Add(this.label1);
             this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitle.Location = new System.Drawing.Point(314, 0);
             this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(1018, 49);
+            this.panelTitle.Size = new System.Drawing.Size(1137, 49);
             this.panelTitle.TabIndex = 3;
             // 
-            // label2
+            // label1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
-            this.label2.Location = new System.Drawing.Point(288, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(528, 33);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "CHÀO MỪNG BẠN ĐẾN VỚI QUẢN TRỊ";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
+            this.label1.Location = new System.Drawing.Point(288, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(528, 33);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "CHÀO MỪNG BẠN ĐẾN VỚI QUẢN TRỊ";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MainChinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1332, 840);
+            this.ClientSize = new System.Drawing.Size(1451, 840);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "MainChinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainChinh";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.MainChinh_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -366,7 +374,7 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label kkk;
         private System.Windows.Forms.Button btnQLSV;
         private System.Windows.Forms.Button btnHS;
         private System.Windows.Forms.Button btnAN;
@@ -380,6 +388,6 @@
         private System.Windows.Forms.Button btnTaiKhoan;
         private System.Windows.Forms.Button btnDangxuat;
         private System.Windows.Forms.Panel panelTitle;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

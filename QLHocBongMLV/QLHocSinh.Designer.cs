@@ -111,7 +111,7 @@
             this.dataGridViewHS.RowHeadersWidth = 51;
             this.dataGridViewHS.RowTemplate.Height = 24;
             this.dataGridViewHS.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dataGridViewHS.Size = new System.Drawing.Size(1187, 319);
+            this.dataGridViewHS.Size = new System.Drawing.Size(1187, 300);
             this.dataGridViewHS.TabIndex = 56;
             // 
             // btnXoaHS
@@ -550,7 +550,7 @@
             this.btnXuatFile.ForeColor = System.Drawing.Color.Transparent;
             this.btnXuatFile.Image = ((System.Drawing.Image)(resources.GetObject("btnXuatFile.Image")));
             this.btnXuatFile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXuatFile.Location = new System.Drawing.Point(1166, 848);
+            this.btnXuatFile.Location = new System.Drawing.Point(1171, 831);
             this.btnXuatFile.Name = "btnXuatFile";
             this.btnXuatFile.Size = new System.Drawing.Size(110, 53);
             this.btnXuatFile.TabIndex = 113;
@@ -559,7 +559,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(1031, 875);
+            this.textBox1.Location = new System.Drawing.Point(1053, 846);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(52, 26);
@@ -569,7 +569,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(974, 875);
+            this.label1.Location = new System.Drawing.Point(996, 846);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 20);
             this.label1.TabIndex = 111;
@@ -580,7 +580,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1339, 909);
+            this.ClientSize = new System.Drawing.Size(1339, 894);
             this.Controls.Add(this.btnXuatFile);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
@@ -626,6 +626,7 @@
             this.Controls.Add(this.txtMaTuTangHS);
             this.Controls.Add(this.labelMaTuTangHS);
             this.Controls.Add(this.txtMaHS);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "QLHocSinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Quản Lý Học Sinh";

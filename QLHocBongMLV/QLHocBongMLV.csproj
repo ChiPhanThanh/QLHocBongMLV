@@ -359,6 +359,9 @@
     <EmbeddedResource Include="QLCum.resx">
       <DependentUpon>QLCum.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="QLCuu.resx">
+      <DependentUpon>QLCuu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QLDuHoc.resx">
       <DependentUpon>QLDuHoc.cs</DependentUpon>
     </EmbeddedResource>

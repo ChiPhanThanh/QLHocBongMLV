@@ -86,7 +86,7 @@
             // kkk
             // 
             this.kkk.AutoSize = true;
-            this.kkk.Location = new System.Drawing.Point(76, 37);
+            this.kkk.Location = new System.Drawing.Point(106, 30);
             this.kkk.Name = "kkk";
             this.kkk.Size = new System.Drawing.Size(44, 16);
             this.kkk.TabIndex = 0;
@@ -321,27 +321,27 @@
             // 
             // panel1
             // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(314, 42);
+            this.panel1.AutoScroll = true;
+            this.panel1.Location = new System.Drawing.Point(314, 55);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1197, 798);
+            this.panel1.Size = new System.Drawing.Size(1254, 785);
             this.panel1.TabIndex = 1;
             // 
             // panelTitle
             // 
             this.panelTitle.Controls.Add(this.label1);
-            this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitle.Location = new System.Drawing.Point(314, 0);
             this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(1197, 49);
+            this.panelTitle.Size = new System.Drawing.Size(1254, 49);
             this.panelTitle.TabIndex = 3;
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
-            this.label1.Location = new System.Drawing.Point(288, 9);
+            this.label1.Location = new System.Drawing.Point(327, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(528, 33);
             this.label1.TabIndex = 1;
@@ -352,7 +352,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1511, 840);
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(1567, 840);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flowLayoutPanel1);

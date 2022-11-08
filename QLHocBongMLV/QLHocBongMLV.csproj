@@ -68,9 +68,9 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <None Include="Main.cs">
+    <Compile Include="Main.cs">
       <SubType>Form</SubType>
-    </None>
+    </Compile>
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>

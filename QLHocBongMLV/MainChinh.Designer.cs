@@ -41,7 +41,7 @@
             this.btnCV = new System.Windows.Forms.Button();
             this.btnDiem = new System.Windows.Forms.Button();
             this.btnTaiChinh = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.btnQLCuu = new System.Windows.Forms.Button();
             this.btnTaiKhoan = new System.Windows.Forms.Button();
             this.btnDangxuat = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -65,7 +65,7 @@
             this.flowLayoutPanel1.Controls.Add(this.btnCV);
             this.flowLayoutPanel1.Controls.Add(this.btnDiem);
             this.flowLayoutPanel1.Controls.Add(this.btnTaiChinh);
-            this.flowLayoutPanel1.Controls.Add(this.button11);
+            this.flowLayoutPanel1.Controls.Add(this.btnQLCuu);
             this.flowLayoutPanel1.Controls.Add(this.btnTaiKhoan);
             this.flowLayoutPanel1.Controls.Add(this.btnDangxuat);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -264,24 +264,24 @@
             this.btnTaiChinh.UseVisualStyleBackColor = false;
             this.btnTaiChinh.Click += new System.EventHandler(this.btnTaiChinh_Click);
             // 
-            // button11
+            // btnQLCuu
             // 
-            this.button11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.Image = global::QLHocBongMLV.Properties.Resources.folder_32;
-            this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.Location = new System.Drawing.Point(3, 574);
-            this.button11.Name = "button11";
-            this.button11.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button11.Size = new System.Drawing.Size(307, 50);
-            this.button11.TabIndex = 13;
-            this.button11.Text = "  Quản lý Cựu Viên";
-            this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.btnQLCuu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnQLCuu.FlatAppearance.BorderSize = 0;
+            this.btnQLCuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQLCuu.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQLCuu.ForeColor = System.Drawing.Color.White;
+            this.btnQLCuu.Image = global::QLHocBongMLV.Properties.Resources.folder_32;
+            this.btnQLCuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQLCuu.Location = new System.Drawing.Point(3, 574);
+            this.btnQLCuu.Name = "btnQLCuu";
+            this.btnQLCuu.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.btnQLCuu.Size = new System.Drawing.Size(307, 50);
+            this.btnQLCuu.TabIndex = 13;
+            this.btnQLCuu.Text = "  Quản lý Cựu Viên";
+            this.btnQLCuu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnQLCuu.UseVisualStyleBackColor = false;
+            this.btnQLCuu.Click += new System.EventHandler(this.btnQLCuu_Click);
             // 
             // btnTaiKhoan
             // 
@@ -389,7 +389,7 @@
         private System.Windows.Forms.Button btnCV;
         private System.Windows.Forms.Button btnDiem;
         private System.Windows.Forms.Button btnTaiChinh;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button btnQLCuu;
         private System.Windows.Forms.Button btnTaiKhoan;
         private System.Windows.Forms.Button btnDangxuat;
         private System.Windows.Forms.Panel panelTitle;

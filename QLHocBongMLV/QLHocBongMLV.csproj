@@ -278,11 +278,11 @@
     <Compile Include="QLCum.Designer.cs">
       <DependentUpon>QLCum.cs</DependentUpon>
     </Compile>
-    <Compile Include="QLCuuSV.cs">
+    <Compile Include="QLCuu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QLCuuSV.Designer.cs">
-      <DependentUpon>QLCuuSV.cs</DependentUpon>
+    <Compile Include="QLCuu.Designer.cs">
+      <DependentUpon>QLCuu.cs</DependentUpon>
     </Compile>
     <Compile Include="QLDuHoc.cs">
       <SubType>Form</SubType>
@@ -358,9 +358,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QLCum.resx">
       <DependentUpon>QLCum.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="QLCuuSV.resx">
-      <DependentUpon>QLCuuSV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QLDuHoc.resx">
       <DependentUpon>QLDuHoc.cs</DependentUpon>

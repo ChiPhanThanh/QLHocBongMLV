@@ -93,10 +93,7 @@ namespace QLHocBongMLV
             MessageBox.Show("Đang cập nhật", "Thông bao", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
         }
 
-        private void button11_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Đang cập nhật", "Thông bao", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
-        }
+       
         private void btnTaiKhoan_Click(object sender, EventArgs e)
         {
             OpenChildForm(new QLTaiKhoan());
@@ -114,6 +111,9 @@ namespace QLHocBongMLV
             }
         }
 
-      
+        private void btnQLCuu_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new QLCuu());
+        }
     }
 }

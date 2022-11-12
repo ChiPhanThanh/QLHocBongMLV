@@ -169,7 +169,7 @@ namespace QLHocBongMLV
             this.btnXuatFile.ForeColor = System.Drawing.Color.Transparent;
             this.btnXuatFile.Image = ((System.Drawing.Image)(resources.GetObject("btnXuatFile.Image")));
             this.btnXuatFile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXuatFile.Location = new System.Drawing.Point(1090, 840);
+            this.btnXuatFile.Location = new System.Drawing.Point(1090, 827);
             this.btnXuatFile.Name = "btnXuatFile";
             this.btnXuatFile.Size = new System.Drawing.Size(135, 46);
             this.btnXuatFile.TabIndex = 58;
@@ -178,7 +178,7 @@ namespace QLHocBongMLV
             // 
             // txtTong
             // 
-            this.txtTong.Location = new System.Drawing.Point(972, 852);
+            this.txtTong.Location = new System.Drawing.Point(972, 839);
             this.txtTong.Multiline = true;
             this.txtTong.Name = "txtTong";
             this.txtTong.Size = new System.Drawing.Size(52, 26);
@@ -188,7 +188,7 @@ namespace QLHocBongMLV
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(915, 852);
+            this.label1.Location = new System.Drawing.Point(915, 839);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 20);
             this.label1.TabIndex = 56;
@@ -203,7 +203,7 @@ namespace QLHocBongMLV
             this.dataGridViewSV.Name = "dataGridViewSV";
             this.dataGridViewSV.RowHeadersWidth = 51;
             this.dataGridViewSV.RowTemplate.Height = 24;
-            this.dataGridViewSV.Size = new System.Drawing.Size(1171, 258);
+            this.dataGridViewSV.Size = new System.Drawing.Size(1171, 244);
             this.dataGridViewSV.TabIndex = 0;
             // 
             // labelMaSinhVien

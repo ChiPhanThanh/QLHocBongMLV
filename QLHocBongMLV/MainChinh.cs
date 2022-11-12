@@ -36,10 +36,12 @@ namespace QLHocBongMLV
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
+            childForm.BackColor = BackColor; 
             this.panel1.Controls.Add(childForm);
             this.panel1.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
+           
             label1.Text = childForm.Text;
 
         }
@@ -116,6 +118,42 @@ namespace QLHocBongMLV
             }
         }
 
-       
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+            System.Diagnostics.Process.Start("http://mlv2011.com/");
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.facebook.com/hocbongmlv2011");
+        }
+
+        private void bunifuToggleSwitch1_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuToggleSwitch.CheckedChangedEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuToggleSwitch1_CheckedChanged_1(object sender, Bunifu.UI.WinForms.BunifuToggleSwitch.CheckedChangedEventArgs e)
+        {
+            if (bunifuToggleSwitch1.Value == true)
+            {
+                this.BackColor = Color.FromArgb(34, 36, 49);
+            }
+            else
+            {
+                this.BackColor = Color.White;
+            }
+        }
     }
 }

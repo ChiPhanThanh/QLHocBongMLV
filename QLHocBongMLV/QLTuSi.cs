@@ -16,5 +16,10 @@ namespace QLHocBongMLV
         {
             InitializeComponent();
         }
+
+        private void QLTuSi_Load(object sender, EventArgs e)
+        {
+         
+        }
     }
 }

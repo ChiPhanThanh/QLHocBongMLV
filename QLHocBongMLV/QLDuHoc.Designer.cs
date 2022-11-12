@@ -28,24 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QLDuHoc));
             this.rbMaDH = new System.Windows.Forms.RadioButton();
             this.labelMaDuHoc = new System.Windows.Forms.Label();
             this.btnThoatDH = new System.Windows.Forms.Button();
-            this.dataGridViewAN = new System.Windows.Forms.DataGridView();
+            this.dataGridViewDH = new System.Windows.Forms.DataGridView();
             this.btnXoaDH = new System.Windows.Forms.Button();
             this.btnGhiDH = new System.Windows.Forms.Button();
-            this.bntSuaDH = new System.Windows.Forms.Button();
+            this.btnSuaDH = new System.Windows.Forms.Button();
             this.btnThemDH = new System.Windows.Forms.Button();
-            this.rdTenDH = new System.Windows.Forms.RadioButton();
+            this.rbHoTenDH = new System.Windows.Forms.RadioButton();
             this.btnTimkiemDH = new System.Windows.Forms.Button();
             this.txtTImKiemDH = new System.Windows.Forms.TextBox();
             this.labelTImKiemHS = new System.Windows.Forms.Label();
             this.txtGhiChuDH = new System.Windows.Forms.TextBox();
             this.labelGhiChuDH = new System.Windows.Forms.Label();
-            this.txtGiaoXuHS = new System.Windows.Forms.TextBox();
-            this.labelCongTacDH = new System.Windows.Forms.Label();
-            this.txtQueQuanHS = new System.Windows.Forms.TextBox();
+            this.txtNoiDH = new System.Windows.Forms.TextBox();
+            this.labelNoiDH = new System.Windows.Forms.Label();
+            this.txtQueQuanDH = new System.Windows.Forms.TextBox();
             this.labelQueQuanDH = new System.Windows.Forms.Label();
             this.txtNamSinhDH = new System.Windows.Forms.TextBox();
             this.labelNamSinhDH = new System.Windows.Forms.Label();
@@ -55,10 +54,12 @@
             this.txtHoTenDH = new System.Windows.Forms.TextBox();
             this.labelHoTenDH = new System.Windows.Forms.Label();
             this.txtMaDH = new System.Windows.Forms.TextBox();
-            this.btnXuatFile = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAN)).BeginInit();
+            this.txtSDT = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnHuyDH = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDH)).BeginInit();
             this.SuspendLayout();
             // 
             // rbMaDH
@@ -91,23 +92,25 @@
             this.btnThoatDH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThoatDH.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoatDH.ForeColor = System.Drawing.Color.White;
-            this.btnThoatDH.Location = new System.Drawing.Point(930, 317);
+            this.btnThoatDH.Location = new System.Drawing.Point(973, 317);
             this.btnThoatDH.Name = "btnThoatDH";
             this.btnThoatDH.Size = new System.Drawing.Size(91, 42);
             this.btnThoatDH.TabIndex = 177;
             this.btnThoatDH.Text = "Thoát";
             this.btnThoatDH.UseVisualStyleBackColor = false;
+            this.btnThoatDH.Click += new System.EventHandler(this.btnThoatDH_Click);
             // 
-            // dataGridViewAN
+            // dataGridViewDH
             // 
-            this.dataGridViewAN.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(95)))), ((int)(((byte)(153)))));
-            this.dataGridViewAN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewAN.Location = new System.Drawing.Point(50, 395);
-            this.dataGridViewAN.Name = "dataGridViewAN";
-            this.dataGridViewAN.RowHeadersWidth = 51;
-            this.dataGridViewAN.RowTemplate.Height = 24;
-            this.dataGridViewAN.Size = new System.Drawing.Size(1187, 325);
-            this.dataGridViewAN.TabIndex = 154;
+            this.dataGridViewDH.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(95)))), ((int)(((byte)(153)))));
+            this.dataGridViewDH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDH.Location = new System.Drawing.Point(50, 395);
+            this.dataGridViewDH.Name = "dataGridViewDH";
+            this.dataGridViewDH.RowHeadersWidth = 51;
+            this.dataGridViewDH.RowTemplate.Height = 24;
+            this.dataGridViewDH.Size = new System.Drawing.Size(1187, 325);
+            this.dataGridViewDH.TabIndex = 154;
+            this.dataGridViewDH.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDH_RowEnter);
             // 
             // btnXoaDH
             // 
@@ -115,12 +118,13 @@
             this.btnXoaDH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoaDH.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoaDH.ForeColor = System.Drawing.Color.White;
-            this.btnXoaDH.Location = new System.Drawing.Point(745, 317);
+            this.btnXoaDH.Location = new System.Drawing.Point(668, 317);
             this.btnXoaDH.Name = "btnXoaDH";
             this.btnXoaDH.Size = new System.Drawing.Size(91, 42);
             this.btnXoaDH.TabIndex = 176;
             this.btnXoaDH.Text = "Xóa";
             this.btnXoaDH.UseVisualStyleBackColor = false;
+            this.btnXoaDH.Click += new System.EventHandler(this.btnXoaDH_Click);
             // 
             // btnGhiDH
             // 
@@ -128,25 +132,27 @@
             this.btnGhiDH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGhiDH.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGhiDH.ForeColor = System.Drawing.Color.White;
-            this.btnGhiDH.Location = new System.Drawing.Point(544, 317);
+            this.btnGhiDH.Location = new System.Drawing.Point(486, 317);
             this.btnGhiDH.Name = "btnGhiDH";
             this.btnGhiDH.Size = new System.Drawing.Size(91, 42);
             this.btnGhiDH.TabIndex = 175;
             this.btnGhiDH.Text = "Ghi";
             this.btnGhiDH.UseVisualStyleBackColor = false;
+            this.btnGhiDH.Click += new System.EventHandler(this.btnGhiDH_Click);
             // 
-            // bntSuaDH
+            // btnSuaDH
             // 
-            this.bntSuaDH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(77)))), ((int)(((byte)(102)))));
-            this.bntSuaDH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bntSuaDH.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntSuaDH.ForeColor = System.Drawing.Color.White;
-            this.bntSuaDH.Location = new System.Drawing.Point(350, 317);
-            this.bntSuaDH.Name = "bntSuaDH";
-            this.bntSuaDH.Size = new System.Drawing.Size(91, 42);
-            this.bntSuaDH.TabIndex = 174;
-            this.bntSuaDH.Text = "Sửa";
-            this.bntSuaDH.UseVisualStyleBackColor = false;
+            this.btnSuaDH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(77)))), ((int)(((byte)(102)))));
+            this.btnSuaDH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSuaDH.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuaDH.ForeColor = System.Drawing.Color.White;
+            this.btnSuaDH.Location = new System.Drawing.Point(324, 317);
+            this.btnSuaDH.Name = "btnSuaDH";
+            this.btnSuaDH.Size = new System.Drawing.Size(91, 42);
+            this.btnSuaDH.TabIndex = 174;
+            this.btnSuaDH.Text = "Sửa";
+            this.btnSuaDH.UseVisualStyleBackColor = false;
+            this.btnSuaDH.Click += new System.EventHandler(this.btnSuaDH_Click);
             // 
             // btnThemDH
             // 
@@ -160,19 +166,20 @@
             this.btnThemDH.TabIndex = 173;
             this.btnThemDH.Text = "Thêm";
             this.btnThemDH.UseVisualStyleBackColor = false;
+            this.btnThemDH.Click += new System.EventHandler(this.btnThemDH_Click);
             // 
-            // rdTenDH
+            // rbHoTenDH
             // 
-            this.rdTenDH.AutoSize = true;
-            this.rdTenDH.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdTenDH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
-            this.rdTenDH.Location = new System.Drawing.Point(481, 270);
-            this.rdTenDH.Name = "rdTenDH";
-            this.rdTenDH.Size = new System.Drawing.Size(105, 23);
-            this.rdTenDH.TabIndex = 172;
-            this.rdTenDH.TabStop = true;
-            this.rdTenDH.Text = "Họ và tên";
-            this.rdTenDH.UseVisualStyleBackColor = true;
+            this.rbHoTenDH.AutoSize = true;
+            this.rbHoTenDH.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbHoTenDH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this.rbHoTenDH.Location = new System.Drawing.Point(481, 270);
+            this.rbHoTenDH.Name = "rbHoTenDH";
+            this.rbHoTenDH.Size = new System.Drawing.Size(105, 23);
+            this.rbHoTenDH.TabIndex = 172;
+            this.rbHoTenDH.TabStop = true;
+            this.rbHoTenDH.Text = "Họ và tên";
+            this.rbHoTenDH.UseVisualStyleBackColor = true;
             // 
             // btnTimkiemDH
             // 
@@ -183,6 +190,7 @@
             this.btnTimkiemDH.TabIndex = 171;
             this.btnTimkiemDH.Text = "Tìm kiếm";
             this.btnTimkiemDH.UseVisualStyleBackColor = true;
+            this.btnTimkiemDH.Click += new System.EventHandler(this.btnTimkiemDH_Click);
             // 
             // txtTImKiemDH
             // 
@@ -209,10 +217,10 @@
             // 
             this.txtGhiChuDH.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtGhiChuDH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtGhiChuDH.Location = new System.Drawing.Point(997, 33);
+            this.txtGhiChuDH.Location = new System.Drawing.Point(1007, 139);
             this.txtGhiChuDH.Multiline = true;
             this.txtGhiChuDH.Name = "txtGhiChuDH";
-            this.txtGhiChuDH.Size = new System.Drawing.Size(252, 147);
+            this.txtGhiChuDH.Size = new System.Drawing.Size(217, 82);
             this.txtGhiChuDH.TabIndex = 168;
             // 
             // labelGhiChuDH
@@ -220,42 +228,42 @@
             this.labelGhiChuDH.AutoSize = true;
             this.labelGhiChuDH.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelGhiChuDH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
-            this.labelGhiChuDH.Location = new System.Drawing.Point(901, 90);
+            this.labelGhiChuDH.Location = new System.Drawing.Point(911, 145);
             this.labelGhiChuDH.Name = "labelGhiChuDH";
             this.labelGhiChuDH.Size = new System.Drawing.Size(70, 19);
             this.labelGhiChuDH.TabIndex = 167;
             this.labelGhiChuDH.Text = "Ghi chú";
             // 
-            // txtGiaoXuHS
+            // txtNoiDH
             // 
-            this.txtGiaoXuHS.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.txtGiaoXuHS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtGiaoXuHS.Location = new System.Drawing.Point(617, 77);
-            this.txtGiaoXuHS.Multiline = true;
-            this.txtGiaoXuHS.Name = "txtGiaoXuHS";
-            this.txtGiaoXuHS.Size = new System.Drawing.Size(220, 31);
-            this.txtGiaoXuHS.TabIndex = 166;
+            this.txtNoiDH.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.txtNoiDH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNoiDH.Location = new System.Drawing.Point(617, 77);
+            this.txtNoiDH.Multiline = true;
+            this.txtNoiDH.Name = "txtNoiDH";
+            this.txtNoiDH.Size = new System.Drawing.Size(220, 31);
+            this.txtNoiDH.TabIndex = 166;
             // 
-            // labelCongTacDH
+            // labelNoiDH
             // 
-            this.labelCongTacDH.AutoSize = true;
-            this.labelCongTacDH.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCongTacDH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
-            this.labelCongTacDH.Location = new System.Drawing.Point(477, 83);
-            this.labelCongTacDH.Name = "labelCongTacDH";
-            this.labelCongTacDH.Size = new System.Drawing.Size(102, 19);
-            this.labelCongTacDH.TabIndex = 165;
-            this.labelCongTacDH.Text = "Công tác ở ";
+            this.labelNoiDH.AutoSize = true;
+            this.labelNoiDH.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNoiDH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this.labelNoiDH.Location = new System.Drawing.Point(477, 83);
+            this.labelNoiDH.Name = "labelNoiDH";
+            this.labelNoiDH.Size = new System.Drawing.Size(100, 19);
+            this.labelNoiDH.TabIndex = 165;
+            this.labelNoiDH.Text = "Nơi Du Học";
             // 
-            // txtQueQuanHS
+            // txtQueQuanDH
             // 
-            this.txtQueQuanHS.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.txtQueQuanHS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtQueQuanHS.Location = new System.Drawing.Point(617, 133);
-            this.txtQueQuanHS.Multiline = true;
-            this.txtQueQuanHS.Name = "txtQueQuanHS";
-            this.txtQueQuanHS.Size = new System.Drawing.Size(220, 31);
-            this.txtQueQuanHS.TabIndex = 164;
+            this.txtQueQuanDH.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.txtQueQuanDH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtQueQuanDH.Location = new System.Drawing.Point(617, 133);
+            this.txtQueQuanDH.Multiline = true;
+            this.txtQueQuanDH.Name = "txtQueQuanDH";
+            this.txtQueQuanDH.Size = new System.Drawing.Size(220, 31);
+            this.txtQueQuanDH.TabIndex = 164;
             // 
             // labelQueQuanDH
             // 
@@ -352,20 +360,6 @@
             this.txtMaDH.Size = new System.Drawing.Size(180, 30);
             this.txtMaDH.TabIndex = 155;
             // 
-            // btnXuatFile
-            // 
-            this.btnXuatFile.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.btnXuatFile.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXuatFile.ForeColor = System.Drawing.Color.Transparent;
-            this.btnXuatFile.Image = ((System.Drawing.Image)(resources.GetObject("btnXuatFile.Image")));
-            this.btnXuatFile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXuatFile.Location = new System.Drawing.Point(1112, 741);
-            this.btnXuatFile.Name = "btnXuatFile";
-            this.btnXuatFile.Size = new System.Drawing.Size(125, 51);
-            this.btnXuatFile.TabIndex = 182;
-            this.btnXuatFile.Text = "       Xuất File";
-            this.btnXuatFile.UseVisualStyleBackColor = false;
-            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(987, 751);
@@ -384,32 +378,69 @@
             this.label1.TabIndex = 180;
             this.label1.Text = "Tổng:";
             // 
+            // txtSDT
+            // 
+            this.txtSDT.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.txtSDT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSDT.Location = new System.Drawing.Point(1011, 33);
+            this.txtSDT.Multiline = true;
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(220, 31);
+            this.txtSDT.TabIndex = 183;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this.label2.Location = new System.Drawing.Point(874, 33);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(112, 19);
+            this.label2.TabIndex = 182;
+            this.label2.Text = "Số điện thoại";
+            // 
+            // btnHuyDH
+            // 
+            this.btnHuyDH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(77)))), ((int)(((byte)(102)))));
+            this.btnHuyDH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHuyDH.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuyDH.ForeColor = System.Drawing.Color.White;
+            this.btnHuyDH.Location = new System.Drawing.Point(832, 317);
+            this.btnHuyDH.Name = "btnHuyDH";
+            this.btnHuyDH.Size = new System.Drawing.Size(91, 42);
+            this.btnHuyDH.TabIndex = 184;
+            this.btnHuyDH.Text = "Hủy";
+            this.btnHuyDH.UseVisualStyleBackColor = false;
+            this.btnHuyDH.Click += new System.EventHandler(this.btnHuyDH_Click);
+            // 
             // QLDuHoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1284, 804);
-            this.Controls.Add(this.btnXuatFile);
+            this.Controls.Add(this.btnHuyDH);
+            this.Controls.Add(this.txtSDT);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.rbMaDH);
             this.Controls.Add(this.labelMaDuHoc);
             this.Controls.Add(this.btnThoatDH);
-            this.Controls.Add(this.dataGridViewAN);
+            this.Controls.Add(this.dataGridViewDH);
             this.Controls.Add(this.btnXoaDH);
             this.Controls.Add(this.btnGhiDH);
-            this.Controls.Add(this.bntSuaDH);
+            this.Controls.Add(this.btnSuaDH);
             this.Controls.Add(this.btnThemDH);
-            this.Controls.Add(this.rdTenDH);
+            this.Controls.Add(this.rbHoTenDH);
             this.Controls.Add(this.btnTimkiemDH);
             this.Controls.Add(this.txtTImKiemDH);
             this.Controls.Add(this.labelTImKiemHS);
             this.Controls.Add(this.txtGhiChuDH);
             this.Controls.Add(this.labelGhiChuDH);
-            this.Controls.Add(this.txtGiaoXuHS);
-            this.Controls.Add(this.labelCongTacDH);
-            this.Controls.Add(this.txtQueQuanHS);
+            this.Controls.Add(this.txtNoiDH);
+            this.Controls.Add(this.labelNoiDH);
+            this.Controls.Add(this.txtQueQuanDH);
             this.Controls.Add(this.labelQueQuanDH);
             this.Controls.Add(this.txtNamSinhDH);
             this.Controls.Add(this.labelNamSinhDH);
@@ -421,7 +452,8 @@
             this.Controls.Add(this.txtMaDH);
             this.Name = "QLDuHoc";
             this.Text = "Quản Lý Du Học Sinh";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAN)).EndInit();
+            this.Load += new System.EventHandler(this.QLDuHoc_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDH)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -432,20 +464,20 @@
         private System.Windows.Forms.RadioButton rbMaDH;
         private System.Windows.Forms.Label labelMaDuHoc;
         private System.Windows.Forms.Button btnThoatDH;
-        private System.Windows.Forms.DataGridView dataGridViewAN;
+        private System.Windows.Forms.DataGridView dataGridViewDH;
         private System.Windows.Forms.Button btnXoaDH;
         private System.Windows.Forms.Button btnGhiDH;
-        private System.Windows.Forms.Button bntSuaDH;
+        private System.Windows.Forms.Button btnSuaDH;
         private System.Windows.Forms.Button btnThemDH;
-        private System.Windows.Forms.RadioButton rdTenDH;
+        private System.Windows.Forms.RadioButton rbHoTenDH;
         private System.Windows.Forms.Button btnTimkiemDH;
         private System.Windows.Forms.TextBox txtTImKiemDH;
         private System.Windows.Forms.Label labelTImKiemHS;
         private System.Windows.Forms.TextBox txtGhiChuDH;
         private System.Windows.Forms.Label labelGhiChuDH;
-        private System.Windows.Forms.TextBox txtGiaoXuHS;
-        private System.Windows.Forms.Label labelCongTacDH;
-        private System.Windows.Forms.TextBox txtQueQuanHS;
+        private System.Windows.Forms.TextBox txtNoiDH;
+        private System.Windows.Forms.Label labelNoiDH;
+        private System.Windows.Forms.TextBox txtQueQuanDH;
         private System.Windows.Forms.Label labelQueQuanDH;
         private System.Windows.Forms.TextBox txtNamSinhDH;
         private System.Windows.Forms.Label labelNamSinhDH;
@@ -455,8 +487,10 @@
         private System.Windows.Forms.TextBox txtHoTenDH;
         private System.Windows.Forms.Label labelHoTenDH;
         private System.Windows.Forms.TextBox txtMaDH;
-        private System.Windows.Forms.Button btnXuatFile;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtSDT;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnHuyDH;
     }
 }

@@ -111,7 +111,7 @@
             this.dataGridViewHS.RowHeadersWidth = 51;
             this.dataGridViewHS.RowTemplate.Height = 24;
             this.dataGridViewHS.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.dataGridViewHS.Size = new System.Drawing.Size(1187, 300);
+            this.dataGridViewHS.Size = new System.Drawing.Size(1187, 279);
             this.dataGridViewHS.TabIndex = 56;
             // 
             // btnXoaHS

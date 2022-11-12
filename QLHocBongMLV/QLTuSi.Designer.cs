@@ -423,6 +423,7 @@
             this.Controls.Add(this.txtMaTS);
             this.Name = "QLTuSi";
             this.Text = "Quản Lý Tu Sĩ";
+            this.Load += new System.EventHandler(this.QLTuSi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTS)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

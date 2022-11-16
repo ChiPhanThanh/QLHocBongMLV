@@ -31,6 +31,7 @@ namespace QLHocBongMLV
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QlSinhVien));
             this.panelSinhVien = new System.Windows.Forms.Panel();
+            this.btnHuy = new System.Windows.Forms.Button();
             this.btnXuatFile = new System.Windows.Forms.Button();
             this.txtTong = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -96,7 +97,8 @@ namespace QLHocBongMLV
             // 
             // panelSinhVien
             // 
-            this.panelSinhVien.BackColor = System.Drawing.Color.White;
+            this.panelSinhVien.BackColor = System.Drawing.Color.Transparent;
+            this.panelSinhVien.Controls.Add(this.btnHuy);
             this.panelSinhVien.Controls.Add(this.btnXuatFile);
             this.panelSinhVien.Controls.Add(this.txtTong);
             this.panelSinhVien.Controls.Add(this.label1);
@@ -159,8 +161,21 @@ namespace QLHocBongMLV
             this.panelSinhVien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelSinhVien.Location = new System.Drawing.Point(0, 0);
             this.panelSinhVien.Name = "panelSinhVien";
-            this.panelSinhVien.Size = new System.Drawing.Size(1312, 890);
+            this.panelSinhVien.Size = new System.Drawing.Size(1312, 933);
             this.panelSinhVien.TabIndex = 0;
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(77)))), ((int)(((byte)(102)))));
+            this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHuy.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuy.ForeColor = System.Drawing.Color.White;
+            this.btnHuy.Location = new System.Drawing.Point(841, 507);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(91, 42);
+            this.btnHuy.TabIndex = 59;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.UseVisualStyleBackColor = false;
             // 
             // btnXuatFile
             // 
@@ -169,16 +184,17 @@ namespace QLHocBongMLV
             this.btnXuatFile.ForeColor = System.Drawing.Color.Transparent;
             this.btnXuatFile.Image = ((System.Drawing.Image)(resources.GetObject("btnXuatFile.Image")));
             this.btnXuatFile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXuatFile.Location = new System.Drawing.Point(1090, 827);
+            this.btnXuatFile.Location = new System.Drawing.Point(1115, 503);
             this.btnXuatFile.Name = "btnXuatFile";
-            this.btnXuatFile.Size = new System.Drawing.Size(135, 46);
+            this.btnXuatFile.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.btnXuatFile.Size = new System.Drawing.Size(113, 46);
             this.btnXuatFile.TabIndex = 58;
-            this.btnXuatFile.Text = "       Xuất File";
+            this.btnXuatFile.Text = "    Xuất File";
             this.btnXuatFile.UseVisualStyleBackColor = false;
             // 
             // txtTong
             // 
-            this.txtTong.Location = new System.Drawing.Point(972, 839);
+            this.txtTong.Location = new System.Drawing.Point(1176, 824);
             this.txtTong.Multiline = true;
             this.txtTong.Name = "txtTong";
             this.txtTong.Size = new System.Drawing.Size(52, 26);
@@ -188,7 +204,7 @@ namespace QLHocBongMLV
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(915, 839);
+            this.label1.Location = new System.Drawing.Point(1095, 830);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 20);
             this.label1.TabIndex = 56;
@@ -203,7 +219,7 @@ namespace QLHocBongMLV
             this.dataGridViewSV.Name = "dataGridViewSV";
             this.dataGridViewSV.RowHeadersWidth = 51;
             this.dataGridViewSV.RowTemplate.Height = 24;
-            this.dataGridViewSV.Size = new System.Drawing.Size(1171, 244);
+            this.dataGridViewSV.Size = new System.Drawing.Size(1171, 237);
             this.dataGridViewSV.TabIndex = 0;
             // 
             // labelMaSinhVien
@@ -224,7 +240,7 @@ namespace QLHocBongMLV
             this.btnThoatSV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThoatSV.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoatSV.ForeColor = System.Drawing.Color.White;
-            this.btnThoatSV.Location = new System.Drawing.Point(964, 507);
+            this.btnThoatSV.Location = new System.Drawing.Point(980, 507);
             this.btnThoatSV.Name = "btnThoatSV";
             this.btnThoatSV.Size = new System.Drawing.Size(91, 42);
             this.btnThoatSV.TabIndex = 54;
@@ -237,7 +253,7 @@ namespace QLHocBongMLV
             this.btnXoaSV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoaSV.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoaSV.ForeColor = System.Drawing.Color.White;
-            this.btnXoaSV.Location = new System.Drawing.Point(779, 507);
+            this.btnXoaSV.Location = new System.Drawing.Point(667, 507);
             this.btnXoaSV.Name = "btnXoaSV";
             this.btnXoaSV.Size = new System.Drawing.Size(91, 42);
             this.btnXoaSV.TabIndex = 53;
@@ -250,7 +266,7 @@ namespace QLHocBongMLV
             this.btnGhiSV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGhiSV.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGhiSV.ForeColor = System.Drawing.Color.White;
-            this.btnGhiSV.Location = new System.Drawing.Point(578, 507);
+            this.btnGhiSV.Location = new System.Drawing.Point(503, 507);
             this.btnGhiSV.Name = "btnGhiSV";
             this.btnGhiSV.Size = new System.Drawing.Size(91, 42);
             this.btnGhiSV.TabIndex = 52;
@@ -263,7 +279,7 @@ namespace QLHocBongMLV
             this.btnSuaSV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSuaSV.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSuaSV.ForeColor = System.Drawing.Color.White;
-            this.btnSuaSV.Location = new System.Drawing.Point(384, 507);
+            this.btnSuaSV.Location = new System.Drawing.Point(329, 507);
             this.btnSuaSV.Name = "btnSuaSV";
             this.btnSuaSV.Size = new System.Drawing.Size(91, 42);
             this.btnSuaSV.TabIndex = 51;
@@ -276,7 +292,7 @@ namespace QLHocBongMLV
             this.btnThemSV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThemSV.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemSV.ForeColor = System.Drawing.Color.White;
-            this.btnThemSV.Location = new System.Drawing.Point(191, 507);
+            this.btnThemSV.Location = new System.Drawing.Point(160, 507);
             this.btnThemSV.Name = "btnThemSV";
             this.btnThemSV.Size = new System.Drawing.Size(91, 42);
             this.btnThemSV.TabIndex = 50;
@@ -407,9 +423,9 @@ namespace QLHocBongMLV
             this.labelNhanHBong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
             this.labelNhanHBong.Location = new System.Drawing.Point(422, 340);
             this.labelNhanHBong.Name = "labelNhanHBong";
-            this.labelNhanHBong.Size = new System.Drawing.Size(172, 19);
+            this.labelNhanHBong.Size = new System.Drawing.Size(167, 19);
             this.labelNhanHBong.TabIndex = 38;
-            this.labelNhanHBong.Text = "Ngày nhận học bổng";
+            this.labelNhanHBong.Text = "Năm nhận học bổng";
             // 
             // txtNganhHocSV
             // 
@@ -814,7 +830,8 @@ namespace QLHocBongMLV
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1312, 890);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(1312, 933);
             this.Controls.Add(this.panelSinhVien);
             this.Name = "QlSinhVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -889,5 +906,6 @@ namespace QLHocBongMLV
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridViewSV;
         private System.Windows.Forms.Button btnXuatFile;
+        private System.Windows.Forms.Button btnHuy;
     }
 }

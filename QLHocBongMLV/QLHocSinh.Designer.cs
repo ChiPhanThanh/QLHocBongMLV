@@ -207,13 +207,14 @@
             // 
             // btnTimkiemHS
             // 
+            this.btnTimkiemHS.BackColor = System.Drawing.Color.LightCoral;
             this.btnTimkiemHS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimkiemHS.Location = new System.Drawing.Point(788, 297);
             this.btnTimkiemHS.Name = "btnTimkiemHS";
             this.btnTimkiemHS.Size = new System.Drawing.Size(100, 37);
             this.btnTimkiemHS.TabIndex = 100;
             this.btnTimkiemHS.Text = "Tìm kiếm";
-            this.btnTimkiemHS.UseVisualStyleBackColor = true;
+            this.btnTimkiemHS.UseVisualStyleBackColor = false;
             // 
             // txtTImKiemHS
             // 
@@ -276,7 +277,7 @@
             this.labelNhanHBongHS.Name = "labelNhanHBongHS";
             this.labelNhanHBongHS.Size = new System.Drawing.Size(172, 19);
             this.labelNhanHBongHS.TabIndex = 94;
-            this.labelNhanHBongHS.Text = "Ngày nhận học bổng";
+            this.labelNhanHBongHS.Text = " Năm nhận học bổng";
             // 
             // textBox20
             // 
@@ -550,16 +551,17 @@
             this.btnXuatFile.ForeColor = System.Drawing.Color.Transparent;
             this.btnXuatFile.Image = ((System.Drawing.Image)(resources.GetObject("btnXuatFile.Image")));
             this.btnXuatFile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXuatFile.Location = new System.Drawing.Point(1171, 831);
+            this.btnXuatFile.Location = new System.Drawing.Point(1135, 428);
             this.btnXuatFile.Name = "btnXuatFile";
-            this.btnXuatFile.Size = new System.Drawing.Size(110, 53);
+            this.btnXuatFile.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.btnXuatFile.Size = new System.Drawing.Size(110, 49);
             this.btnXuatFile.TabIndex = 113;
-            this.btnXuatFile.Text = "       Xuất File";
+            this.btnXuatFile.Text = "   Xuất File";
             this.btnXuatFile.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(1053, 846);
+            this.textBox1.Location = new System.Drawing.Point(1224, 826);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(52, 26);
@@ -569,7 +571,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(996, 846);
+            this.label1.Location = new System.Drawing.Point(1144, 826);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 20);
             this.label1.TabIndex = 111;
@@ -580,7 +582,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1339, 894);
+            this.ClientSize = new System.Drawing.Size(1339, 869);
             this.Controls.Add(this.btnXuatFile);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);

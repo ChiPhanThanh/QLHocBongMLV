@@ -81,11 +81,11 @@
             // 
             this.dataGridViewCV.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(95)))), ((int)(((byte)(153)))));
             this.dataGridViewCV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCV.Location = new System.Drawing.Point(34, 471);
+            this.dataGridViewCV.Location = new System.Drawing.Point(114, 471);
             this.dataGridViewCV.Name = "dataGridViewCV";
             this.dataGridViewCV.RowHeadersWidth = 51;
             this.dataGridViewCV.RowTemplate.Height = 24;
-            this.dataGridViewCV.Size = new System.Drawing.Size(1187, 225);
+            this.dataGridViewCV.Size = new System.Drawing.Size(926, 225);
             this.dataGridViewCV.TabIndex = 154;
             // 
             // btnXoaCV
@@ -305,7 +305,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1244, 734);
+            this.ClientSize = new System.Drawing.Size(1101, 724);
             this.Controls.Add(this.labelMaAnNhan);
             this.Controls.Add(this.btnThoatCV);
             this.Controls.Add(this.dataGridViewCV);

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using b = Microsoft.Office.Interop.Excel;
 
 namespace QLHocBongMLV
 {
@@ -215,6 +216,11 @@ namespace QLHocBongMLV
 
         private void btnTimkiemAN_Click(object sender, EventArgs e)
         {
+
+            if(txtTImKiemAN.Text.Trim() == " ")
+            {
+               MessageBox. Show("Xin mời nhập vào ô tìm kiếm");
+            }
             //truy vấn dữu liệu
             string sSql = " select * from tblAnNhan where MaAN like % " + txtTImKiemAN + "%";
             if( rbTenAN.Checked == true)
@@ -230,6 +236,65 @@ namespace QLHocBongMLV
         private void btnHuyAN_Click(object sender, EventArgs e)
         {
             SetControl(false);
+        }
+
+        private void ToExcel(DataGridView dataGridViewAN, string fileName)
+        {
+            //khai báo thư viện hỗ trợ Microsoft.Office.Interop.Excel
+            Microsoft.Office.Interop.Excel.Application excel;
+            Microsoft.Office.Interop.Excel.Workbook workbook;
+            Microsoft.Office.Interop.Excel.Worksheet worksheet;
+
+            try
+            {
+                //Tạo đối tượng COM.
+                excel = new Microsoft.Office.Interop.Excel.Application();
+                excel.Visible = false;
+                excel.DisplayAlerts = false;
+                //tạo mới một Workbooks bằng phương thức add()
+                workbook = excel.Workbooks.Add(Type.Missing);
+                worksheet = (Microsoft.Office.Interop.Excel.Worksheet)workbook.Sheets["Sheet1"];
+                //đặt tên cho sheet
+                worksheet.Name = "Quản lý Ân Nhân";
+
+                // export header trong DataGridView
+                for (int i = 0; i < dataGridViewAN.ColumnCount; i++)
+                {
+                    worksheet.Cells[1, i + 1] = dataGridViewAN.Columns[i].HeaderText;
+                }
+                // export nội dung trong DataGridView
+                for (int i = 0; i < dataGridViewAN.RowCount; i++)
+                {
+                    for (int j = 0; j < dataGridViewAN.ColumnCount; j++)
+                    {
+                        worksheet.Cells[i + 2, j + 1] = dataGridViewAN.Rows[i].Cells[j].Value.ToString();
+                    }
+                }
+                // sử dụng phương thức SaveAs() để lưu workbook với filename
+                workbook.SaveAs(fileName);
+                //đóng workbook
+                workbook.Close();
+                excel.Quit();
+                MessageBox.Show("Xuất dữ liệu ra Excel thành công!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                workbook = null;
+                worksheet = null;
+            }
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                //gọi hàm ToExcel() với tham số là dtgDSHS và filename từ SaveFileDialog
+                ToExcel(dataGridViewAN, saveFileDialog1.FileName);
+            }
         }
     }
 }

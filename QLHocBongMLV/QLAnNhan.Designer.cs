@@ -28,9 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QLAnNhan));
             this.labelMaAnNhan = new System.Windows.Forms.Label();
             this.btnThoatAN = new System.Windows.Forms.Button();
             this.dataGridViewAN = new System.Windows.Forms.DataGridView();
+            this.MaAN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoTenAN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NamSinhAN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgheNghiepAN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioiTinhAN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QueQuanAN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SDTAN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GhiChuAN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnXoaAN = new System.Windows.Forms.Button();
             this.btnGhiAN = new System.Windows.Forms.Button();
             this.btnSuaAN = new System.Windows.Forms.Button();
@@ -58,7 +68,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnHuyAN = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnPrint = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAN)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelMaAnNhan
@@ -87,15 +100,107 @@
             // 
             // dataGridViewAN
             // 
+            this.dataGridViewAN.AllowUserToDeleteRows = false;
+            this.dataGridViewAN.AllowUserToResizeRows = false;
             this.dataGridViewAN.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(95)))), ((int)(((byte)(153)))));
-            this.dataGridViewAN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewAN.ColumnHeadersHeight = 28;
+            this.dataGridViewAN.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaAN,
+            this.HoTenAN,
+            this.NamSinhAN,
+            this.NgheNghiepAN,
+            this.GioiTinhAN,
+            this.QueQuanAN,
+            this.SDTAN,
+            this.GhiChuAN});
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewAN.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewAN.Location = new System.Drawing.Point(36, 483);
             this.dataGridViewAN.Name = "dataGridViewAN";
+            this.dataGridViewAN.ReadOnly = true;
             this.dataGridViewAN.RowHeadersWidth = 51;
             this.dataGridViewAN.RowTemplate.Height = 24;
-            this.dataGridViewAN.Size = new System.Drawing.Size(1187, 245);
+            this.dataGridViewAN.Size = new System.Drawing.Size(1187, 228);
             this.dataGridViewAN.TabIndex = 111;
             this.dataGridViewAN.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAN_RowEnter);
+            // 
+            // MaAN
+            // 
+            this.MaAN.DataPropertyName = "MaAn";
+            this.MaAN.HeaderText = "Mã Ân Nhân";
+            this.MaAN.MinimumWidth = 6;
+            this.MaAN.Name = "MaAN";
+            this.MaAN.ReadOnly = true;
+            this.MaAN.Width = 125;
+            // 
+            // HoTenAN
+            // 
+            this.HoTenAN.DataPropertyName = "HoTen";
+            this.HoTenAN.HeaderText = "Họ Tên";
+            this.HoTenAN.MinimumWidth = 6;
+            this.HoTenAN.Name = "HoTenAN";
+            this.HoTenAN.ReadOnly = true;
+            this.HoTenAN.Width = 125;
+            // 
+            // NamSinhAN
+            // 
+            this.NamSinhAN.DataPropertyName = "NamSinh";
+            this.NamSinhAN.HeaderText = "Năm Sinh";
+            this.NamSinhAN.MinimumWidth = 6;
+            this.NamSinhAN.Name = "NamSinhAN";
+            this.NamSinhAN.ReadOnly = true;
+            this.NamSinhAN.Width = 125;
+            // 
+            // NgheNghiepAN
+            // 
+            this.NgheNghiepAN.DataPropertyName = "NgheNghiep";
+            this.NgheNghiepAN.HeaderText = "Nghề Nghiệp";
+            this.NgheNghiepAN.MinimumWidth = 6;
+            this.NgheNghiepAN.Name = "NgheNghiepAN";
+            this.NgheNghiepAN.ReadOnly = true;
+            this.NgheNghiepAN.Width = 125;
+            // 
+            // GioiTinhAN
+            // 
+            this.GioiTinhAN.DataPropertyName = "GioiTinh";
+            this.GioiTinhAN.HeaderText = "Giới Tính";
+            this.GioiTinhAN.MinimumWidth = 6;
+            this.GioiTinhAN.Name = "GioiTinhAN";
+            this.GioiTinhAN.ReadOnly = true;
+            this.GioiTinhAN.Width = 125;
+            // 
+            // QueQuanAN
+            // 
+            this.QueQuanAN.DataPropertyName = "QueQuan";
+            this.QueQuanAN.HeaderText = "Quê Quán";
+            this.QueQuanAN.MinimumWidth = 6;
+            this.QueQuanAN.Name = "QueQuanAN";
+            this.QueQuanAN.ReadOnly = true;
+            this.QueQuanAN.Width = 125;
+            // 
+            // SDTAN
+            // 
+            this.SDTAN.DataPropertyName = "SoDienThoai";
+            this.SDTAN.HeaderText = "Số điện thoại";
+            this.SDTAN.MinimumWidth = 6;
+            this.SDTAN.Name = "SDTAN";
+            this.SDTAN.ReadOnly = true;
+            this.SDTAN.Width = 125;
+            // 
+            // GhiChuAN
+            // 
+            this.GhiChuAN.DataPropertyName = "GhiChu";
+            this.GhiChuAN.HeaderText = "Ghi Chú";
+            this.GhiChuAN.MinimumWidth = 6;
+            this.GhiChuAN.Name = "GhiChuAN";
+            this.GhiChuAN.ReadOnly = true;
+            this.GhiChuAN.Width = 125;
             // 
             // btnXoaAN
             // 
@@ -183,6 +288,7 @@
             // 
             this.txtTImKiemAN.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtTImKiemAN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTImKiemAN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTImKiemAN.Location = new System.Drawing.Point(295, 262);
             this.txtTImKiemAN.Multiline = true;
             this.txtTImKiemAN.Name = "txtTImKiemAN";
@@ -204,6 +310,7 @@
             // 
             this.txtGhiChuAN.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtGhiChuAN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtGhiChuAN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGhiChuAN.Location = new System.Drawing.Point(1003, 110);
             this.txtGhiChuAN.Multiline = true;
             this.txtGhiChuAN.Name = "txtGhiChuAN";
@@ -225,6 +332,7 @@
             // 
             this.txtNgheNghiepAN.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtNgheNghiepAN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNgheNghiepAN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNgheNghiepAN.Location = new System.Drawing.Point(622, 104);
             this.txtNgheNghiepAN.Multiline = true;
             this.txtNgheNghiepAN.Name = "txtNgheNghiepAN";
@@ -246,6 +354,7 @@
             // 
             this.txtQueQuanAN.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtQueQuanAN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtQueQuanAN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQueQuanAN.Location = new System.Drawing.Point(622, 160);
             this.txtQueQuanAN.Multiline = true;
             this.txtQueQuanAN.Name = "txtQueQuanAN";
@@ -267,6 +376,7 @@
             // 
             this.txtNamSinhAN.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtNamSinhAN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNamSinhAN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNamSinhAN.Location = new System.Drawing.Point(202, 104);
             this.txtNamSinhAN.Multiline = true;
             this.txtNamSinhAN.Name = "txtNamSinhAN";
@@ -299,10 +409,11 @@
             // 
             this.txtHoTenAN.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtHoTenAN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtHoTenAN.Location = new System.Drawing.Point(622, 54);
+            this.txtHoTenAN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoTenAN.Location = new System.Drawing.Point(622, 49);
             this.txtHoTenAN.Multiline = true;
             this.txtHoTenAN.Name = "txtHoTenAN";
-            this.txtHoTenAN.Size = new System.Drawing.Size(220, 25);
+            this.txtHoTenAN.Size = new System.Drawing.Size(220, 30);
             this.txtHoTenAN.TabIndex = 124;
             // 
             // labelHoTenAN
@@ -321,6 +432,7 @@
             this.txtMaAN.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtMaAN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMaAN.Enabled = false;
+            this.txtMaAN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaAN.Location = new System.Drawing.Point(202, 49);
             this.txtMaAN.Multiline = true;
             this.txtMaAN.Name = "txtMaAN";
@@ -331,6 +443,7 @@
             // 
             this.txtGioiTinhAN.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtGioiTinhAN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtGioiTinhAN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGioiTinhAN.Location = new System.Drawing.Point(204, 160);
             this.txtGioiTinhAN.Multiline = true;
             this.txtGioiTinhAN.Name = "txtGioiTinhAN";
@@ -365,6 +478,7 @@
             // 
             this.txtSDT_AN.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtSDT_AN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSDT_AN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSDT_AN.Location = new System.Drawing.Point(1016, 49);
             this.txtSDT_AN.Multiline = true;
             this.txtSDT_AN.Name = "txtSDT_AN";
@@ -398,11 +512,32 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnPrint);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1594, 994);
+            this.panel1.Size = new System.Drawing.Size(1275, 795);
             this.panel1.TabIndex = 157;
+            // 
+            // btnPrint
+            // 
+            this.btnPrint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(106)))), ((int)(((byte)(79)))));
+            this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrint.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
+            this.btnPrint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrint.Location = new System.Drawing.Point(1081, 402);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.btnPrint.Size = new System.Drawing.Size(111, 49);
+            this.btnPrint.TabIndex = 0;
+            this.btnPrint.Text = "  Xuất File";
+            this.btnPrint.UseVisualStyleBackColor = false;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.Filter = "Excel 2003|*xls|Excel 2019|*.xlsx";
             // 
             // QLAnNhan
             // 
@@ -446,6 +581,7 @@
             this.Text = "Quản Lý Ân Nhân";
             this.Load += new System.EventHandler(this.QLAnNhan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAN)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -483,5 +619,15 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnHuyAN;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnPrint;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaAN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HoTenAN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NamSinhAN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgheNghiepAN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinhAN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QueQuanAN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SDTAN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GhiChuAN;
     }
 }

@@ -118,11 +118,7 @@ namespace QLHocBongMLV
             }
         }
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+   
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
@@ -139,15 +135,64 @@ namespace QLHocBongMLV
 
         }
 
-        private void bunifuToggleSwitch1_CheckedChanged_1(object sender, Bunifu.UI.WinForms.BunifuToggleSwitch.CheckedChangedEventArgs e)
+        /*private void bunifuToggleSwitch1_CheckedChanged_1(object sender, Bunifu.UI.WinForms.BunifuToggleSwitch.CheckedChangedEventArgs e)
         {
             if (bunifuToggleSwitch1.Value == true)
             {
                 this.BackColor = Color.FromArgb(34, 36, 49);
+                this.BackColor = Color.AliceBlue;
             }
             else
             {
                 this.BackColor = Color.White;
+            }
+        }*/
+
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show(" Bạn có muốn thoát không?", "Thông báo...", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (dr == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            return;
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Maximized;
+   
+            }
+            else
+                this.WindowState = FormWindowState.Normal;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void kkk_Click(object sender, EventArgs e)
+        {
+            if (currenChildForm != null)
+            {
+                //open only form
+                currenChildForm.Close();
             }
         }
     }

@@ -28,10 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QLDuHoc));
             this.rbMaDH = new System.Windows.Forms.RadioButton();
             this.labelMaDuHoc = new System.Windows.Forms.Label();
             this.btnThoatDH = new System.Windows.Forms.Button();
             this.dataGridViewDH = new System.Windows.Forms.DataGridView();
+            this.MaDH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NamSinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NoiDuHoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QueQuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoDienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnXoaDH = new System.Windows.Forms.Button();
             this.btnGhiDH = new System.Windows.Forms.Button();
             this.btnSuaDH = new System.Windows.Forms.Button();
@@ -59,6 +68,8 @@
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnHuyDH = new System.Windows.Forms.Button();
+            this.btnXuatExcel = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDH)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,15 +113,103 @@
             // 
             // dataGridViewDH
             // 
+            this.dataGridViewDH.AllowUserToAddRows = false;
+            this.dataGridViewDH.AllowUserToDeleteRows = false;
             this.dataGridViewDH.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(95)))), ((int)(((byte)(153)))));
+            this.dataGridViewDH.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewDH.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridViewDH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDH.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaDH,
+            this.HoTen,
+            this.NamSinh,
+            this.NoiDuHoc,
+            this.QueQuan,
+            this.GioiTinh,
+            this.SoDienThoai,
+            this.GhiChu});
+            this.dataGridViewDH.EnableHeadersVisualStyles = false;
+            this.dataGridViewDH.GridColor = System.Drawing.SystemColors.Highlight;
             this.dataGridViewDH.Location = new System.Drawing.Point(50, 395);
             this.dataGridViewDH.Name = "dataGridViewDH";
+            this.dataGridViewDH.ReadOnly = true;
             this.dataGridViewDH.RowHeadersWidth = 51;
             this.dataGridViewDH.RowTemplate.Height = 24;
-            this.dataGridViewDH.Size = new System.Drawing.Size(1187, 325);
+            this.dataGridViewDH.Size = new System.Drawing.Size(1187, 268);
             this.dataGridViewDH.TabIndex = 154;
             this.dataGridViewDH.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDH_RowEnter);
+            // 
+            // MaDH
+            // 
+            this.MaDH.DataPropertyName = "MaDH";
+            this.MaDH.HeaderText = "Mã Du Học";
+            this.MaDH.MinimumWidth = 6;
+            this.MaDH.Name = "MaDH";
+            this.MaDH.ReadOnly = true;
+            this.MaDH.Width = 125;
+            // 
+            // HoTen
+            // 
+            this.HoTen.DataPropertyName = "HoTen";
+            this.HoTen.HeaderText = "Họ Tên";
+            this.HoTen.MinimumWidth = 6;
+            this.HoTen.Name = "HoTen";
+            this.HoTen.ReadOnly = true;
+            this.HoTen.Width = 125;
+            // 
+            // NamSinh
+            // 
+            this.NamSinh.DataPropertyName = "NamSinh";
+            this.NamSinh.HeaderText = "Năm Sinh";
+            this.NamSinh.MinimumWidth = 6;
+            this.NamSinh.Name = "NamSinh";
+            this.NamSinh.ReadOnly = true;
+            this.NamSinh.Width = 125;
+            // 
+            // NoiDuHoc
+            // 
+            this.NoiDuHoc.DataPropertyName = "NoiDuHoc";
+            this.NoiDuHoc.HeaderText = "Nơi Du Học";
+            this.NoiDuHoc.MinimumWidth = 6;
+            this.NoiDuHoc.Name = "NoiDuHoc";
+            this.NoiDuHoc.ReadOnly = true;
+            this.NoiDuHoc.Width = 125;
+            // 
+            // QueQuan
+            // 
+            this.QueQuan.DataPropertyName = "QueQuan";
+            this.QueQuan.HeaderText = "Quê Quán";
+            this.QueQuan.MinimumWidth = 6;
+            this.QueQuan.Name = "QueQuan";
+            this.QueQuan.ReadOnly = true;
+            this.QueQuan.Width = 125;
+            // 
+            // GioiTinh
+            // 
+            this.GioiTinh.DataPropertyName = "GioiTinh";
+            this.GioiTinh.HeaderText = "Giới Tính";
+            this.GioiTinh.MinimumWidth = 6;
+            this.GioiTinh.Name = "GioiTinh";
+            this.GioiTinh.ReadOnly = true;
+            this.GioiTinh.Width = 125;
+            // 
+            // SoDienThoai
+            // 
+            this.SoDienThoai.DataPropertyName = "SoDienThoai";
+            this.SoDienThoai.HeaderText = "Số Điện Thoại";
+            this.SoDienThoai.MinimumWidth = 6;
+            this.SoDienThoai.Name = "SoDienThoai";
+            this.SoDienThoai.ReadOnly = true;
+            this.SoDienThoai.Width = 125;
+            // 
+            // GhiChu
+            // 
+            this.GhiChu.DataPropertyName = "GhiChu";
+            this.GhiChu.HeaderText = "Ghi Chú";
+            this.GhiChu.MinimumWidth = 6;
+            this.GhiChu.Name = "GhiChu";
+            this.GhiChu.ReadOnly = true;
+            this.GhiChu.Width = 125;
             // 
             // btnXoaDH
             // 
@@ -183,19 +282,21 @@
             // 
             // btnTimkiemDH
             // 
+            this.btnTimkiemDH.BackColor = System.Drawing.Color.IndianRed;
             this.btnTimkiemDH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimkiemDH.Location = new System.Drawing.Point(772, 209);
             this.btnTimkiemDH.Name = "btnTimkiemDH";
             this.btnTimkiemDH.Size = new System.Drawing.Size(100, 37);
             this.btnTimkiemDH.TabIndex = 171;
             this.btnTimkiemDH.Text = "Tìm kiếm";
-            this.btnTimkiemDH.UseVisualStyleBackColor = true;
+            this.btnTimkiemDH.UseVisualStyleBackColor = false;
             this.btnTimkiemDH.Click += new System.EventHandler(this.btnTimkiemDH_Click);
             // 
             // txtTImKiemDH
             // 
             this.txtTImKiemDH.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtTImKiemDH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTImKiemDH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTImKiemDH.Location = new System.Drawing.Point(230, 209);
             this.txtTImKiemDH.Multiline = true;
             this.txtTImKiemDH.Name = "txtTImKiemDH";
@@ -217,6 +318,7 @@
             // 
             this.txtGhiChuDH.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtGhiChuDH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtGhiChuDH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGhiChuDH.Location = new System.Drawing.Point(1007, 139);
             this.txtGhiChuDH.Multiline = true;
             this.txtGhiChuDH.Name = "txtGhiChuDH";
@@ -238,6 +340,7 @@
             // 
             this.txtNoiDH.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtNoiDH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNoiDH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNoiDH.Location = new System.Drawing.Point(617, 77);
             this.txtNoiDH.Multiline = true;
             this.txtNoiDH.Name = "txtNoiDH";
@@ -259,6 +362,7 @@
             // 
             this.txtQueQuanDH.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtQueQuanDH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtQueQuanDH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQueQuanDH.Location = new System.Drawing.Point(617, 133);
             this.txtQueQuanDH.Multiline = true;
             this.txtQueQuanDH.Name = "txtQueQuanDH";
@@ -280,6 +384,7 @@
             // 
             this.txtNamSinhDH.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtNamSinhDH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNamSinhDH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNamSinhDH.Location = new System.Drawing.Point(197, 77);
             this.txtNamSinhDH.Multiline = true;
             this.txtNamSinhDH.Name = "txtNamSinhDH";
@@ -312,6 +417,7 @@
             // 
             this.txtGioiTinhDH.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtGioiTinhDH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtGioiTinhDH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGioiTinhDH.Location = new System.Drawing.Point(199, 133);
             this.txtGioiTinhDH.Multiline = true;
             this.txtGioiTinhDH.Name = "txtGioiTinhDH";
@@ -333,10 +439,11 @@
             // 
             this.txtHoTenDH.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtHoTenDH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtHoTenDH.Location = new System.Drawing.Point(617, 27);
+            this.txtHoTenDH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHoTenDH.Location = new System.Drawing.Point(617, 22);
             this.txtHoTenDH.Multiline = true;
             this.txtHoTenDH.Name = "txtHoTenDH";
-            this.txtHoTenDH.Size = new System.Drawing.Size(220, 25);
+            this.txtHoTenDH.Size = new System.Drawing.Size(220, 30);
             this.txtHoTenDH.TabIndex = 157;
             // 
             // labelHoTenDH
@@ -354,6 +461,7 @@
             // 
             this.txtMaDH.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtMaDH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMaDH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaDH.Location = new System.Drawing.Point(197, 22);
             this.txtMaDH.Multiline = true;
             this.txtMaDH.Name = "txtMaDH";
@@ -362,7 +470,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(987, 751);
+            this.textBox1.Location = new System.Drawing.Point(1116, 685);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(52, 26);
@@ -372,7 +480,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(930, 751);
+            this.label1.Location = new System.Drawing.Point(1037, 685);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 20);
             this.label1.TabIndex = 180;
@@ -382,6 +490,7 @@
             // 
             this.txtSDT.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtSDT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSDT.Location = new System.Drawing.Point(1011, 33);
             this.txtSDT.Multiline = true;
             this.txtSDT.Name = "txtSDT";
@@ -413,12 +522,33 @@
             this.btnHuyDH.UseVisualStyleBackColor = false;
             this.btnHuyDH.Click += new System.EventHandler(this.btnHuyDH_Click);
             // 
+            // btnXuatExcel
+            // 
+            this.btnXuatExcel.BackColor = System.Drawing.Color.Green;
+            this.btnXuatExcel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXuatExcel.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXuatExcel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnXuatExcel.Image = ((System.Drawing.Image)(resources.GetObject("btnXuatExcel.Image")));
+            this.btnXuatExcel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXuatExcel.Location = new System.Drawing.Point(1116, 317);
+            this.btnXuatExcel.Name = "btnXuatExcel";
+            this.btnXuatExcel.Size = new System.Drawing.Size(108, 42);
+            this.btnXuatExcel.TabIndex = 185;
+            this.btnXuatExcel.Text = "   Xuất File";
+            this.btnXuatExcel.UseVisualStyleBackColor = false;
+            this.btnXuatExcel.Click += new System.EventHandler(this.btnXuatExcel_Click);
+            // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.Filter = "Excel 2003|*xls|Excel 2019|*.xlsx";
+            // 
             // QLDuHoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1284, 804);
+            this.Controls.Add(this.btnXuatExcel);
             this.Controls.Add(this.btnHuyDH);
             this.Controls.Add(this.txtSDT);
             this.Controls.Add(this.label2);
@@ -492,5 +622,15 @@
         private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnHuyDH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaDH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NamSinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NoiDuHoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QueQuan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoDienThoai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GhiChu;
+        private System.Windows.Forms.Button btnXuatExcel;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }

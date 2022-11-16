@@ -16,5 +16,10 @@ namespace QLHocBongMLV
         {
             InitializeComponent();
         }
+
+        private void QLCum_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

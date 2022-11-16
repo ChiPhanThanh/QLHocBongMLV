@@ -66,11 +66,11 @@
             // 
             this.dataGridViewCum.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(95)))), ((int)(((byte)(153)))));
             this.dataGridViewCum.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCum.Location = new System.Drawing.Point(28, 427);
+            this.dataGridViewCum.Location = new System.Drawing.Point(119, 427);
             this.dataGridViewCum.Name = "dataGridViewCum";
             this.dataGridViewCum.RowHeadersWidth = 51;
             this.dataGridViewCum.RowTemplate.Height = 24;
-            this.dataGridViewCum.Size = new System.Drawing.Size(1012, 250);
+            this.dataGridViewCum.Size = new System.Drawing.Size(843, 250);
             this.dataGridViewCum.TabIndex = 180;
             // 
             // btnXoaCum
@@ -79,7 +79,7 @@
             this.btnXoaCum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoaCum.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoaCum.ForeColor = System.Drawing.Color.White;
-            this.btnXoaCum.Location = new System.Drawing.Point(732, 311);
+            this.btnXoaCum.Location = new System.Drawing.Point(693, 311);
             this.btnXoaCum.Name = "btnXoaCum";
             this.btnXoaCum.Size = new System.Drawing.Size(91, 42);
             this.btnXoaCum.TabIndex = 197;
@@ -92,7 +92,7 @@
             this.btnGhiCum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGhiCum.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGhiCum.ForeColor = System.Drawing.Color.White;
-            this.btnGhiCum.Location = new System.Drawing.Point(531, 311);
+            this.btnGhiCum.Location = new System.Drawing.Point(542, 311);
             this.btnGhiCum.Name = "btnGhiCum";
             this.btnGhiCum.Size = new System.Drawing.Size(91, 42);
             this.btnGhiCum.TabIndex = 196;
@@ -105,7 +105,7 @@
             this.bntSuaCum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bntSuaCum.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bntSuaCum.ForeColor = System.Drawing.Color.White;
-            this.bntSuaCum.Location = new System.Drawing.Point(337, 311);
+            this.bntSuaCum.Location = new System.Drawing.Point(406, 311);
             this.bntSuaCum.Name = "bntSuaCum";
             this.bntSuaCum.Size = new System.Drawing.Size(91, 42);
             this.bntSuaCum.TabIndex = 195;
@@ -118,7 +118,7 @@
             this.btnThemCum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThemCum.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemCum.ForeColor = System.Drawing.Color.White;
-            this.btnThemCum.Location = new System.Drawing.Point(144, 311);
+            this.btnThemCum.Location = new System.Drawing.Point(268, 311);
             this.btnThemCum.Name = "btnThemCum";
             this.btnThemCum.Size = new System.Drawing.Size(91, 42);
             this.btnThemCum.TabIndex = 194;
@@ -256,7 +256,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1083, 732);
+            this.ClientSize = new System.Drawing.Size(1086, 719);
             this.Controls.Add(this.btnThoatCum);
             this.Controls.Add(this.dataGridViewCum);
             this.Controls.Add(this.btnXoaCum);
@@ -278,6 +278,7 @@
             this.Name = "QLCum";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quan Lý Cụm";
+            this.Load += new System.EventHandler(this.QLCum_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCum)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -12,7 +12,6 @@ namespace QLHocBongMLV
         {
 
         }
-        
         SqlCommand sqlCommand; //khoi tạo SQL Commant // dùng để truy vấn csdl
         SqlDataReader dataReader; // dùng để đọc dữ liệu trong bảng
 

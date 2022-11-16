@@ -35,7 +35,7 @@
             this.dataGridViewTS = new System.Windows.Forms.DataGridView();
             this.btnXoaTS = new System.Windows.Forms.Button();
             this.btnGhiTS = new System.Windows.Forms.Button();
-            this.bntSuaTS = new System.Windows.Forms.Button();
+            this.btnSuaTS = new System.Windows.Forms.Button();
             this.btnThemTS = new System.Windows.Forms.Button();
             this.rdTenTS = new System.Windows.Forms.RadioButton();
             this.btnTimkiemTS = new System.Windows.Forms.Button();
@@ -58,6 +58,13 @@
             this.btnXuatFile = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnHuyTS = new System.Windows.Forms.Button();
+            this.tetNamCV = new System.Windows.Forms.TextBox();
+            this.labelNamNhan = new System.Windows.Forms.Label();
+            this.textTenCV = new System.Windows.Forms.TextBox();
+            this.labelChucVu = new System.Windows.Forms.Label();
+            this.textNoiTuHoc = new System.Windows.Forms.TextBox();
+            this.txtNoiTuHoc = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTS)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,12 +73,12 @@
             this.rbMaTS.AutoSize = true;
             this.rbMaTS.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbMaTS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
-            this.rbMaTS.Location = new System.Drawing.Point(366, 299);
+            this.rbMaTS.Location = new System.Drawing.Point(366, 329);
             this.rbMaTS.Name = "rbMaTS";
-            this.rbMaTS.Size = new System.Drawing.Size(124, 23);
+            this.rbMaTS.Size = new System.Drawing.Size(96, 23);
             this.rbMaTS.TabIndex = 179;
             this.rbMaTS.TabStop = true;
-            this.rbMaTS.Text = "Mã Ân Nhân";
+            this.rbMaTS.Text = "Mã Tu Sĩ";
             this.rbMaTS.UseVisualStyleBackColor = true;
             // 
             // labelMaTuSi
@@ -91,7 +98,7 @@
             this.btnThoatTS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThoatTS.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoatTS.ForeColor = System.Drawing.Color.White;
-            this.btnThoatTS.Location = new System.Drawing.Point(930, 342);
+            this.btnThoatTS.Location = new System.Drawing.Point(930, 374);
             this.btnThoatTS.Name = "btnThoatTS";
             this.btnThoatTS.Size = new System.Drawing.Size(91, 42);
             this.btnThoatTS.TabIndex = 177;
@@ -102,12 +109,13 @@
             // 
             this.dataGridViewTS.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(95)))), ((int)(((byte)(153)))));
             this.dataGridViewTS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewTS.Location = new System.Drawing.Point(50, 414);
+            this.dataGridViewTS.Location = new System.Drawing.Point(50, 448);
             this.dataGridViewTS.Name = "dataGridViewTS";
             this.dataGridViewTS.RowHeadersWidth = 51;
             this.dataGridViewTS.RowTemplate.Height = 24;
-            this.dataGridViewTS.Size = new System.Drawing.Size(1187, 288);
+            this.dataGridViewTS.Size = new System.Drawing.Size(1187, 249);
             this.dataGridViewTS.TabIndex = 154;
+            this.dataGridViewTS.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewTS_CellContentClick);
             // 
             // btnXoaTS
             // 
@@ -115,7 +123,7 @@
             this.btnXoaTS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoaTS.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoaTS.ForeColor = System.Drawing.Color.White;
-            this.btnXoaTS.Location = new System.Drawing.Point(745, 342);
+            this.btnXoaTS.Location = new System.Drawing.Point(617, 374);
             this.btnXoaTS.Name = "btnXoaTS";
             this.btnXoaTS.Size = new System.Drawing.Size(91, 42);
             this.btnXoaTS.TabIndex = 176;
@@ -128,25 +136,25 @@
             this.btnGhiTS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGhiTS.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGhiTS.ForeColor = System.Drawing.Color.White;
-            this.btnGhiTS.Location = new System.Drawing.Point(544, 342);
+            this.btnGhiTS.Location = new System.Drawing.Point(460, 374);
             this.btnGhiTS.Name = "btnGhiTS";
             this.btnGhiTS.Size = new System.Drawing.Size(91, 42);
             this.btnGhiTS.TabIndex = 175;
             this.btnGhiTS.Text = "Ghi";
             this.btnGhiTS.UseVisualStyleBackColor = false;
             // 
-            // bntSuaTS
+            // btnSuaTS
             // 
-            this.bntSuaTS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(77)))), ((int)(((byte)(102)))));
-            this.bntSuaTS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bntSuaTS.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntSuaTS.ForeColor = System.Drawing.Color.White;
-            this.bntSuaTS.Location = new System.Drawing.Point(350, 342);
-            this.bntSuaTS.Name = "bntSuaTS";
-            this.bntSuaTS.Size = new System.Drawing.Size(91, 42);
-            this.bntSuaTS.TabIndex = 174;
-            this.bntSuaTS.Text = "Sửa";
-            this.bntSuaTS.UseVisualStyleBackColor = false;
+            this.btnSuaTS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(77)))), ((int)(((byte)(102)))));
+            this.btnSuaTS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSuaTS.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuaTS.ForeColor = System.Drawing.Color.White;
+            this.btnSuaTS.Location = new System.Drawing.Point(312, 374);
+            this.btnSuaTS.Name = "btnSuaTS";
+            this.btnSuaTS.Size = new System.Drawing.Size(91, 42);
+            this.btnSuaTS.TabIndex = 174;
+            this.btnSuaTS.Text = "Sửa";
+            this.btnSuaTS.UseVisualStyleBackColor = false;
             // 
             // btnThemTS
             // 
@@ -154,19 +162,20 @@
             this.btnThemTS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThemTS.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemTS.ForeColor = System.Drawing.Color.White;
-            this.btnThemTS.Location = new System.Drawing.Point(157, 342);
+            this.btnThemTS.Location = new System.Drawing.Point(157, 374);
             this.btnThemTS.Name = "btnThemTS";
             this.btnThemTS.Size = new System.Drawing.Size(91, 42);
             this.btnThemTS.TabIndex = 173;
             this.btnThemTS.Text = "Thêm";
             this.btnThemTS.UseVisualStyleBackColor = false;
+            this.btnThemTS.Click += new System.EventHandler(this.btnThemTS_Click);
             // 
             // rdTenTS
             // 
             this.rdTenTS.AutoSize = true;
             this.rdTenTS.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdTenTS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
-            this.rdTenTS.Location = new System.Drawing.Point(617, 299);
+            this.rdTenTS.Location = new System.Drawing.Point(617, 329);
             this.rdTenTS.Name = "rdTenTS";
             this.rdTenTS.Size = new System.Drawing.Size(105, 23);
             this.rdTenTS.TabIndex = 172;
@@ -177,9 +186,10 @@
             // btnTimkiemTS
             // 
             this.btnTimkiemTS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(95)))), ((int)(((byte)(153)))));
-            this.btnTimkiemTS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimkiemTS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnTimkiemTS.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimkiemTS.ForeColor = System.Drawing.Color.White;
-            this.btnTimkiemTS.Location = new System.Drawing.Point(832, 235);
+            this.btnTimkiemTS.Location = new System.Drawing.Point(832, 265);
             this.btnTimkiemTS.Name = "btnTimkiemTS";
             this.btnTimkiemTS.Size = new System.Drawing.Size(100, 37);
             this.btnTimkiemTS.TabIndex = 171;
@@ -190,7 +200,8 @@
             // 
             this.txtTimKiemTS.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtTimKiemTS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTimKiemTS.Location = new System.Drawing.Point(290, 235);
+            this.txtTimKiemTS.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimKiemTS.Location = new System.Drawing.Point(290, 265);
             this.txtTimKiemTS.Multiline = true;
             this.txtTimKiemTS.Name = "txtTimKiemTS";
             this.txtTimKiemTS.Size = new System.Drawing.Size(547, 37);
@@ -201,7 +212,7 @@
             this.labelTImKiemTS.AutoSize = true;
             this.labelTImKiemTS.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTImKiemTS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
-            this.labelTImKiemTS.Location = new System.Drawing.Point(137, 243);
+            this.labelTImKiemTS.Location = new System.Drawing.Point(137, 273);
             this.labelTImKiemTS.Name = "labelTImKiemTS";
             this.labelTImKiemTS.Size = new System.Drawing.Size(78, 19);
             this.labelTImKiemTS.TabIndex = 169;
@@ -211,10 +222,11 @@
             // 
             this.txtGhichuTS.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtGhichuTS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtGhichuTS.Location = new System.Drawing.Point(997, 57);
+            this.txtGhichuTS.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGhichuTS.Location = new System.Drawing.Point(997, 135);
             this.txtGhichuTS.Multiline = true;
             this.txtGhichuTS.Name = "txtGhichuTS";
-            this.txtGhichuTS.Size = new System.Drawing.Size(252, 147);
+            this.txtGhichuTS.Size = new System.Drawing.Size(240, 138);
             this.txtGhichuTS.TabIndex = 168;
             // 
             // labelGhiChuTS
@@ -222,7 +234,7 @@
             this.labelGhiChuTS.AutoSize = true;
             this.labelGhiChuTS.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelGhiChuTS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
-            this.labelGhiChuTS.Location = new System.Drawing.Point(901, 114);
+            this.labelGhiChuTS.Location = new System.Drawing.Point(901, 187);
             this.labelGhiChuTS.Name = "labelGhiChuTS";
             this.labelGhiChuTS.Size = new System.Drawing.Size(70, 19);
             this.labelGhiChuTS.TabIndex = 167;
@@ -232,6 +244,7 @@
             // 
             this.txtQueQuanTS.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtQueQuanTS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtQueQuanTS.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQueQuanTS.Location = new System.Drawing.Point(617, 101);
             this.txtQueQuanTS.Multiline = true;
             this.txtQueQuanTS.Name = "txtQueQuanTS";
@@ -253,6 +266,7 @@
             // 
             this.txtGiaoXuTS.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtGiaoXuTS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtGiaoXuTS.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGiaoXuTS.Location = new System.Drawing.Point(617, 157);
             this.txtGiaoXuTS.Multiline = true;
             this.txtGiaoXuTS.Name = "txtGiaoXuTS";
@@ -274,6 +288,7 @@
             // 
             this.txtHoTenTS.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtHoTenTS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtHoTenTS.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoTenTS.Location = new System.Drawing.Point(197, 101);
             this.txtHoTenTS.Multiline = true;
             this.txtHoTenTS.Name = "txtHoTenTS";
@@ -296,7 +311,7 @@
             this.labelSĐT.AutoSize = true;
             this.labelSĐT.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSĐT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
-            this.labelSĐT.Location = new System.Drawing.Point(636, 250);
+            this.labelSĐT.Location = new System.Drawing.Point(636, 280);
             this.labelSĐT.Name = "labelSĐT";
             this.labelSĐT.Size = new System.Drawing.Size(112, 19);
             this.labelSĐT.TabIndex = 160;
@@ -306,6 +321,7 @@
             // 
             this.txtNamSinhTS.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtNamSinhTS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNamSinhTS.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNamSinhTS.Location = new System.Drawing.Point(199, 157);
             this.txtNamSinhTS.Multiline = true;
             this.txtNamSinhTS.Name = "txtNamSinhTS";
@@ -327,10 +343,11 @@
             // 
             this.txtMaChucVuTS.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtMaChucVuTS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtMaChucVuTS.Location = new System.Drawing.Point(617, 51);
+            this.txtMaChucVuTS.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaChucVuTS.Location = new System.Drawing.Point(617, 46);
             this.txtMaChucVuTS.Multiline = true;
             this.txtMaChucVuTS.Name = "txtMaChucVuTS";
-            this.txtMaChucVuTS.Size = new System.Drawing.Size(220, 25);
+            this.txtMaChucVuTS.Size = new System.Drawing.Size(220, 30);
             this.txtMaChucVuTS.TabIndex = 157;
             // 
             // labelMaChucVuTS
@@ -348,6 +365,7 @@
             // 
             this.txtMaTS.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtMaTS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMaTS.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaTS.Location = new System.Drawing.Point(197, 46);
             this.txtMaTS.Multiline = true;
             this.txtMaTS.Name = "txtMaTS";
@@ -361,9 +379,9 @@
             this.btnXuatFile.ForeColor = System.Drawing.Color.Transparent;
             this.btnXuatFile.Image = ((System.Drawing.Image)(resources.GetObject("btnXuatFile.Image")));
             this.btnXuatFile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXuatFile.Location = new System.Drawing.Point(1106, 726);
+            this.btnXuatFile.Location = new System.Drawing.Point(1101, 337);
             this.btnXuatFile.Name = "btnXuatFile";
-            this.btnXuatFile.Size = new System.Drawing.Size(136, 47);
+            this.btnXuatFile.Size = new System.Drawing.Size(108, 47);
             this.btnXuatFile.TabIndex = 182;
             this.btnXuatFile.Text = "       Xuất File";
             this.btnXuatFile.UseVisualStyleBackColor = false;
@@ -386,12 +404,98 @@
             this.label1.TabIndex = 180;
             this.label1.Text = "Tổng:";
             // 
+            // btnHuyTS
+            // 
+            this.btnHuyTS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(77)))), ((int)(((byte)(102)))));
+            this.btnHuyTS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHuyTS.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuyTS.ForeColor = System.Drawing.Color.White;
+            this.btnHuyTS.Location = new System.Drawing.Point(772, 374);
+            this.btnHuyTS.Name = "btnHuyTS";
+            this.btnHuyTS.Size = new System.Drawing.Size(91, 42);
+            this.btnHuyTS.TabIndex = 183;
+            this.btnHuyTS.Text = "Hủy";
+            this.btnHuyTS.UseVisualStyleBackColor = false;
+            // 
+            // tetNamCV
+            // 
+            this.tetNamCV.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.tetNamCV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tetNamCV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tetNamCV.Location = new System.Drawing.Point(617, 211);
+            this.tetNamCV.Multiline = true;
+            this.tetNamCV.Name = "tetNamCV";
+            this.tetNamCV.Size = new System.Drawing.Size(220, 31);
+            this.tetNamCV.TabIndex = 187;
+            // 
+            // labelNamNhan
+            // 
+            this.labelNamNhan.AutoSize = true;
+            this.labelNamNhan.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNamNhan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this.labelNamNhan.Location = new System.Drawing.Point(456, 223);
+            this.labelNamNhan.Name = "labelNamNhan";
+            this.labelNamNhan.Size = new System.Drawing.Size(138, 19);
+            this.labelNamNhan.TabIndex = 186;
+            this.labelNamNhan.Text = "Năm Nhân Chức";
+            // 
+            // textTenCV
+            // 
+            this.textTenCV.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.textTenCV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textTenCV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textTenCV.Location = new System.Drawing.Point(199, 211);
+            this.textTenCV.Multiline = true;
+            this.textTenCV.Name = "textTenCV";
+            this.textTenCV.Size = new System.Drawing.Size(178, 31);
+            this.textTenCV.TabIndex = 185;
+            // 
+            // labelChucVu
+            // 
+            this.labelChucVu.AutoSize = true;
+            this.labelChucVu.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelChucVu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this.labelChucVu.Location = new System.Drawing.Point(46, 211);
+            this.labelChucVu.Name = "labelChucVu";
+            this.labelChucVu.Size = new System.Drawing.Size(112, 19);
+            this.labelChucVu.TabIndex = 184;
+            this.labelChucVu.Text = "Tên Chức Vụ";
+            // 
+            // textNoiTuHoc
+            // 
+            this.textNoiTuHoc.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.textNoiTuHoc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textNoiTuHoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textNoiTuHoc.Location = new System.Drawing.Point(997, 43);
+            this.textNoiTuHoc.Multiline = true;
+            this.textNoiTuHoc.Name = "textNoiTuHoc";
+            this.textNoiTuHoc.Size = new System.Drawing.Size(220, 30);
+            this.textNoiTuHoc.TabIndex = 189;
+            // 
+            // txtNoiTuHoc
+            // 
+            this.txtNoiTuHoc.AutoSize = true;
+            this.txtNoiTuHoc.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNoiTuHoc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(95)))), ((int)(((byte)(95)))));
+            this.txtNoiTuHoc.Location = new System.Drawing.Point(874, 49);
+            this.txtNoiTuHoc.Name = "txtNoiTuHoc";
+            this.txtNoiTuHoc.Size = new System.Drawing.Size(97, 19);
+            this.txtNoiTuHoc.TabIndex = 188;
+            this.txtNoiTuHoc.Text = "Nơi Tu Học";
+            // 
             // QLTuSi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1294, 785);
+            this.ClientSize = new System.Drawing.Size(1294, 819);
+            this.Controls.Add(this.textNoiTuHoc);
+            this.Controls.Add(this.txtNoiTuHoc);
+            this.Controls.Add(this.tetNamCV);
+            this.Controls.Add(this.labelNamNhan);
+            this.Controls.Add(this.textTenCV);
+            this.Controls.Add(this.labelChucVu);
+            this.Controls.Add(this.btnHuyTS);
             this.Controls.Add(this.btnXuatFile);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
@@ -401,7 +505,7 @@
             this.Controls.Add(this.dataGridViewTS);
             this.Controls.Add(this.btnXoaTS);
             this.Controls.Add(this.btnGhiTS);
-            this.Controls.Add(this.bntSuaTS);
+            this.Controls.Add(this.btnSuaTS);
             this.Controls.Add(this.btnThemTS);
             this.Controls.Add(this.rdTenTS);
             this.Controls.Add(this.btnTimkiemTS);
@@ -438,7 +542,7 @@
         private System.Windows.Forms.DataGridView dataGridViewTS;
         private System.Windows.Forms.Button btnXoaTS;
         private System.Windows.Forms.Button btnGhiTS;
-        private System.Windows.Forms.Button bntSuaTS;
+        private System.Windows.Forms.Button btnSuaTS;
         private System.Windows.Forms.Button btnThemTS;
         private System.Windows.Forms.RadioButton rdTenTS;
         private System.Windows.Forms.Button btnTimkiemTS;
@@ -461,5 +565,12 @@
         private System.Windows.Forms.Button btnXuatFile;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnHuyTS;
+        private System.Windows.Forms.TextBox tetNamCV;
+        private System.Windows.Forms.Label labelNamNhan;
+        private System.Windows.Forms.TextBox textTenCV;
+        private System.Windows.Forms.Label labelChucVu;
+        private System.Windows.Forms.TextBox textNoiTuHoc;
+        private System.Windows.Forms.Label txtNoiTuHoc;
     }
 }

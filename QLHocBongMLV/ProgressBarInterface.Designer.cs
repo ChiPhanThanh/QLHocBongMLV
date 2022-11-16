@@ -62,7 +62,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::QLHocBongMLV.Properties.Resources.LOGO_HB;
-            this.pictureBox1.Location = new System.Drawing.Point(240, 41);
+            this.pictureBox1.Location = new System.Drawing.Point(253, 41);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(358, 324);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -74,7 +74,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(121)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(246, 377);
+            this.label1.Location = new System.Drawing.Point(260, 368);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(371, 38);
             this.label1.TabIndex = 2;

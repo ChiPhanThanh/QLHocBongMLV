@@ -134,11 +134,6 @@ namespace QLHocBongMLV
             System.Diagnostics.Process.Start("https://www.facebook.com/hocbongmlv2011");
         }
 
-        private void bunifuToggleSwitch1_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuToggleSwitch.CheckedChangedEventArgs e)
-        {
-
-        }
-
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
